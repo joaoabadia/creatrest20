@@ -10,9 +10,11 @@
 
 .gastrite {
     font-size: 30px;
+    text-decoration: none;
+    color: black;
 }
 
-.h2 {
+ {
     display: block;
 
 }
