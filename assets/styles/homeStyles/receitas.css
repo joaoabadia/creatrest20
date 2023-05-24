@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    margin-top: 30px;
+    padding: 50px;
+}
+
+.gastrite {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+
+ {
+    display: block;
+
+}
+.titulo__receitas {
+    font-size: 24px;
+    margin: 20px 0 20px;
+}
+
+.refeicao {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.ingredientes {
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+ul, il {
+    margin-left: 40px;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.preparo {
+    font-size: 24px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.preparo__text {
+    line-height: 1.5;
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: justify;
+}

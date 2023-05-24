@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Receitas</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -13,9 +13,10 @@
     />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="/assets/styles/homeStyles/home.css" />
+    <link rel="stylesheet" href="/assets/styles/homeStyles/receitas.css">
   </head>
   <body>
-    <nav class="navbar d-flex navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar d-flex navbar-expand-lg bg-info-subtle">
         <div class="container-fluid">
             <span class="logo">
                 <a href="/pages/home/home.html" class="logo">
@@ -28,14 +29,14 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="../home/home.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" href="../users/receitas-preferidas.html">Favoritos</a>
               </li>
               
               <li class="nav-item">
-                <a class="nav-link disabled">Disabled</a>
+                <a class="nav-link href"#">Categorias</a>
               </li>
             </ul>
             <form class="d-flex" role="search">
@@ -45,5 +46,43 @@
           </div>
         </div>
       </nav>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+      <section id="main">
+        <a class="gastrite" href="#">Gastrite Aguda</a>
+        <h3 class="titulo__receitas">Arroz de Couve-flor com Iscas de Frango</h3>
+        <img class="refeicao" src="/assets/img/imgReceitas/receita-arrozcomfrango.jpeg" alt="prato de refeicao">
+        <h4 class="ingredientes">Ingredientes</h4>
+        <ul>
+          <li>
+            1 cabeça de Couve-flor crua
+          </li>
+          <li>
+            ½ cebola
+          </li>
+          <li>
+            1 dente de alho
+          </li>
+          <li>
+            2 colheres de sopa de azeite de oliva extravirgem
+          </li>
+          <li>
+            ½ colher de chá de sal
+          </li>
+          <li>
+            Salsinha a gosto
+          </li>
+          <li>
+            100 g de frango cortado em tiras
+          </li>
+        </ul>
+        <p class="preparo">Modo de Preparo</p>
+        <p class="preparo__text">
+          Coloque a couve-flor lavada e crua em um processador ou liquidificador e bata até que
+            fique em pedaços
+            pequenos. Em uma panela, coloque 1 colher de azeite extravirgem, adicione cebola, alho e refogue.
+            Junte a couve-flor e tempere com sal. Misture muito bem, adicione a água, tampe a panela e deixe
+            cozinhar em fogo baixo por 4 minutos. Finalize com salsinha picada e prontinho!
+        </p>
+      </section>
   </body>
 </html>
