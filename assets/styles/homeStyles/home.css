@@ -23,24 +23,70 @@ span a:hover {
   text-decoration: none;
 }
 
+*{
+    padding: 5px;
+
+}
+header{
+    position:relative;
+    width: 100%;
+    margin: 2px;
+    padding: 2px;
+    background-color:rgb(205, 255, 251); 
+}
 main{
-    display: flexbox;
-    background-color:#ffffff;
+    display:block;
+    padding: 5px;
+    background-color: rgb(205, 255, 251);
     font-size: 20px;
     width: 100%;
     height: auto;
+    
 }
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    float: left;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 70px;
+  }
+  
+  .sidenav a {
+    padding: 8p x 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  
+  #main {
+    transition: margin-right .5s;
+    padding: 14px;
+    float: right;
+    display: flexbox;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
 
-.titulo__favoritos {
-  text-align:left;
-  font-size: 48px;
-  font-weight: 400;
-}
-
-.rodape {
-  padding:40px;
-  text-align: center;
-  background-color:#7FD8EA;
-  font-size: 24px;
-  font-weight: 400;
-}
