@@ -13,37 +13,50 @@
   <link rel="stylesheet" href="/assets/styles/homeStyles/home.css" />
 </head>
 
-<body>
-  <nav class="navbar d-flex navbar-expand-lg bg-info-subtle">
-    <div class="container-fluid">
-      <span class="logo">
-        <a href="home.html" class="logo">
-          <img src="/assets/img/Logo.png" alt="Descrição da logo" />
-        </a>
-      </span>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled">Disabled</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <a class="btn btn-primary" href="/pages/users/login.html" role="button">Login</a>
-    <a class="btn btn-primary" href="/pages/users/register.html" role="button">Register</a>
-    <a class="btn btn-primary hidden" href="/pages/users/profile.html" role="button">Perfil</a>
-  </nav>
-   <main class="row container text-center "> 
+<body id="main">
+    <header>
+        <nav class="navbar d-flex navbar-expand-lg "
+            <div class="container-fluid">
+                <span class="logo">
+                    <a href="home.html" class="logo">
+                        <img src="/assets/img/Logo.png" alt="Descrição da logo" />
+                    </a>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                    </ul>
+
+                    <a class="btn btn-dark" href="/pages/users/login.html" role="button">Login</a>
+                    <a class="btn btn-dark" href="/pages/users/register.html" role="button">Register</a>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                            Usuário
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pages/users/profile.html" Perfil</a></li>
+                        <li><a class="dropdown-item" href="pages/users/receita2.html">Receitas</a></li>
+                        <li><a class="dropdown-item" href="#">Preferidas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sair</a></li>
+                    </ul>
+                    <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div>
+        </nav>
+    </header>
+
+    <main class="row  text-center ">
         <article class="col-sm-6 text-black "">
             <h2><strong>O que são Restrições Alimentares</strong></h2>
             <p>A ingestão de determinados alimentos pode provocar uma série de sintomas indesejados ou até mesmo
@@ -77,8 +90,8 @@
                 condições
                 pré-existentes. Para evitar isso, muitas vezes adota-se restrições alimentares específicas.</p>
             <h3><strong>Entre os tipos de restrições alimentares mais comuns </strong> </h3>
-            <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/bl-300x200.jpg" class="img-thumbnail"
-                alt="" width="400" height="200">
+            <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/bl-300x200.jpg"
+                class="img-thumbnail" alt="" width="400" height="200">
         </article>
 
 
@@ -92,7 +105,7 @@
                 resposta imune num indivíduo com APLV (Alergia à Proteína do Leite de Vaca). Nesse sentido, os sintomas
                 de ambas as condições abrangem azia, diarreia, dores e inchaço abdominal.</p>
             <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/leite-300x200.jpg"
-            class="img-thumbnail" alt="" width="400" height="200">
+                class="img-thumbnail" alt="" width="400" height="200">
         </article>
 
         <article class="col-sm-6  text-black">
@@ -105,10 +118,10 @@
                 ainda, por uma <a
                     href="https://drauziovarella.uol.com.br/alimentacao/doenca-celiaca-como-diagnosticar-e-tratar/">doença
                     celíaca</a>, de origem genética.</p>
-                    <br><br><br>
-                
+            <br><br><br>
+
             <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/bla-300x200.jpg"
-            class="img-thumbnail" alt="" width="400" height="200">
+                class="img-thumbnail" alt="" width="400" height="200">
             <br>
         </article>
         <article class="col-sm-6  text-black">
@@ -119,18 +132,18 @@
                 decorrente da falta de insulina e/ou da incapacidade e/ou falta de insulina exercer
                 adequadamente seus efeitos,
                 caracterizando altas taxa de açúcar no sangue ( hiperglicemia) de forma permanente.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOlrN5WNa_xU1Bvk1Nh5IPpo4BUpx-fjyKD0gEVaN7g&s" class="img-thumbnail"
-                alt=""  width="400" height="200">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOlrN5WNa_xU1Bvk1Nh5IPpo4BUpx-fjyKD0gEVaN7g&s"
+                class="img-thumbnail" alt="" width="400" height="200">
         </article>
         <article class="col-sm-6  text-black">
             <h3 class=""><span class=""><strong>Veganismo</span></strong></h3>
             <p>Veganismo é a prática de abster-se do uso de produtos animais — particularmente, mas não
                 somente, na alimentação — e também uma filosofia que condena a exploração animal.
                 Um adepto deste modo de viver e dessa filosofia é conhecido como vegano ou vegana</p>
-                <br>
-            <img src="https://sportlife.com.br/wp-content/uploads/2021/06/vegano.jpg" class="img-thumbnail" alt=""  width="400"
-                height="200">
-                <br>
+            <br>
+            <img src="https://sportlife.com.br/wp-content/uploads/2021/06/vegano.jpg" class="img-thumbnail" alt=""
+                width="400" height="200">
+            <br>
         </article>
         <article class="col-sm-6  text-black ">
             <h3><strong>Gastrite Aguda</strong></h3>
@@ -149,10 +162,34 @@
         <article class="col-sm-6  text-black ">
             <h3><strong>Crustáceos</strong></h3>
             <p>Ainda mais, os crustáceos são alergênicos comuns, o que os torna vilões para muitas pessoas.
-             A proteína responsável pela alergia é a tropomiosina, presente na carne de camarões e lagostas.
-             Os alérgicos apresentam sintomas como: dificuldade para respirar, tonturas e erupções cutâneas.</p>
+                A proteína responsável pela alergia é a tropomiosina, presente na carne de camarões e lagostas.
+                Os alérgicos apresentam sintomas como: dificuldade para respirar, tonturas e erupções cutâneas.</p>
+            <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://www.farmajunior.com.br/wp-content/uploads/2021/07/xia-300x225.jpg" 
+            class="img-thumbnail" alt="" width="400" height="200">
         </article>
     </main>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <section>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#">Home</a>
+            <a href="#">Meu perfil</a>
+            <a href="#">Restrições</a>
+            <a href="#">Receitas</a>
+        </div>
+    </section>
+
+
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+        }
+    </script>
 </body>
+
 </html>
