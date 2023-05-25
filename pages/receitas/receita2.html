@@ -8,38 +8,58 @@
     <title>Categoria de receitas</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css%22%3E" />
     <link rel="stylesheet" href="/assets/styles/homeStyles/home.css" />
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
     <link rel="stylesheet" href="/assets/styles/homeStyles/receitasPreferidas.css" />
 </head>
 <body>
-    <nav class="navbar d-flex navbar-expand-lg bg-info-subtle">
-        <div class="container-fluid">
-            <span class="logo">
-                <a href="/pages/home/home.html" class="logo">
-                    <img src="../../assets/img/Logo.png" alt="Descrição da logo" />
-                </a>
-            </span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Link</a>
-                    </li>
+    <header>
+        <nav class="navbar d-flex navbar-expand-lg "
+            <div class="container-fluid">
+                <span class="logo">
+                    <a href="pages/home/home.html" class="logo">
+                        <img src="/assets/img/Logo.png" alt="Descrição da logo" />
+                    </a>
+                </span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
+                        </li>
+                    </ul>
 
-                    <li class="nav-item">
-                        <a class="nav-link">Disabled</a>
-                    </li>
-                </ul>
-                <form class="d-flex" role="search">
+                    <a class="btn btn-dark" href="/pages/users/login.html" role="button">Login</a>
+                    <a class="btn btn-dark" href="/pages/users/register.html" role="button">Register</a>
+                    <div class="dropdown">
+                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
+                            Usuário
+                        </button>
+                    </div>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="pages/users/profile.html" Perfil</a></li>
+                        <li><a class="dropdown-item" href="pages/users/receita2.html">Receitas</a></li>
+                        <li><a class="dropdown-item" href="#">Preferidas</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Sair</a></li>
+                    </ul>
+                    <div id="main">
+                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+                    </div              
+                     <form class="d-flex" role="search">
                     <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
                     <button class="btn btn-outline-success" type="submit">Search</button>
                 </form>
+                </nav>
+              </div>
+        </div>
+    </header>
+
             </div>
         </div>
     </nav>
