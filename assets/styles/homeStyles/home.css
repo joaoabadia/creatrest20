@@ -23,7 +23,10 @@ span a:hover {
   text-decoration: none;
 }
 
-main {
-  padding: 5px
+main{
+    display: flexbox;
+    background-color: ;
+    font-size: 20px;
+    width: 100%;
+    height: auto;
 }
-
