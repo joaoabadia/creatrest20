@@ -2,191 +2,166 @@
 <html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>CreaRest</title>
-  <link rel="shortcut icon" href="/assets/img/Logo.png" type="image/x-icon">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous" />
-  <link rel="stylesheet" href="/assets/styles/homeStyles/home.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Home</title>
 </head>
 
-<body id="main">
+<body>
     <header>
-        <nav class="navbar d-flex navbar-expand-lg "
-            <div class="container-fluid">
-                <span class="logo">
-                    <a href="pages/home/home.html" class="logo">
-                        <img src="/assets/img/Logo.png" alt="Descrição da logo" />
-                    </a>
-                </span>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="Home.html">Home</a>
-                        </li>
-                    </ul>
-
-                    <a class="btn btn-dark" href="/pages/users/login.html" role="button">Login</a>
-                    <a class="btn btn-dark" href="/pages/users/register.html" role="button">Register</a>
-                    <div class="dropdown">
-                        <button type="button" class="btn btn-dark dropdown-toggle" data-bs-toggle="dropdown">
-                            Usuário
-                        </button>
-                    </div>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="pages/users/profile.html" Perfil</a></li>
-                        <li><a class="dropdown-item" href="pages/users/receita2.html">Receitas</a></li>
-                        <li><a class="dropdown-item" href="pages/users/receitas-preferidas.html">Preferidas</a></li>
-                        <li>
-                            <hr class="dropdown-divider">
-                        </li>
-                        <li><a class="dropdown-item" href="#">Sair</a></li>
-                    </ul>
-                    <div id="main">
-                        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                    </div>
-        </nav>
+        <div class="topnav">
+            <a class="active" href="#">Menu</a>
+            <a href=>Novidades</a>
+            <a href="receitas.html">Receitas</a>
+            <a class="log" href="login.html">Login</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i></a>
+        </div>
     </header>
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
 
-    <main class="row  text-center ">
-        <article class="col-sm-6 text-black "">
-            <h2><strong>O que são Restrições Alimentares</strong></h2>
-            <p>A ingestão de determinados alimentos pode provocar uma série de sintomas indesejados ou até mesmo
-                complicações mais graves em organismos que apresentam condições pré-existentes. Para evitar isso,
-                muitasvezes adota-se restrições alimentares específicas. Por várias razões muitas pessoas acabam tendo restrições alimentares, 
-                necessitando de uma atenção especial na hora de se alimentar. As restrições variam em tipo e intensidade de acordo com cada indivíduo, seu organismo e condição de saúde. Existem diferentes restrições alimentares: uma intolerância alimentar sintomática ocorre quando o organismo de uma pessoa não é capaz de digerir determinado nutriente; já uma alergia alimentar é uma reação de saúde adversa que ocorre quando o sistema imunológico reconhece, de forma incorreta, um nutriente como sendo um fator agressivo ao organismo. Uma pesquisa
-                 realizada pela Nielsen em 2016 mostrou que 36% dos consumidores têm alguma alergia ou intolerância a um ou mais gêneros alimentícios.</p>
-        </article>
-        <article class=" col-md-6 text-black"">
-            <h3><strong>Origem do termo e Doença</strong></h3>
-            <p>As restrições alimentares caracterizam-se pela redução ou exclusão de determinados alimentos de
-                uma
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="/estudo/frango-ao-iogurte.jpg" style="width:100%" height="500px">
+            <div class="text">Frango ao Iorgute</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="/estudo/salada-colorida-de-legumes-2.jpg" style="width:100%" height="500px">
+            <div class="text">Salada Colorida de Legumes</div>
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="/estudo/salada-tropical-com-rucula.jpg" style="width:100%" height="500px">
+            <div class="text">Salada Tropital com Rucula</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- The dots/circles -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+    <!-- Informações da Home -->
+    <main>
+        <div class="p1">
+            <h2>Restrição Alimentares</h2>
+            <br>
+            <p>A ingestão de determinados alimentos pode provocar uma série de
+                sintomas indesejados ou até mesmo complicações mais graves em organismos que apresentam
+                condições pré-existentes. Para evitar isso, muitas vezes adota-se restrições alimentares específicas.
+            </p>
+            <br><br>
+            <h3> Entre os tipos de restrições alimentares mais comuns:</h3>
+            <br><br>
+            <button type="button" class="collapsible"><strong>Lactose</strong></button>
+            <div class="content">
+                <p>A intolerância a esse carboidrato do leite ocorre por insuficiência ou ausência da enzima lactase no
+                    organismo,
+                    sendo que, após ingestão, o açúcar permanece no intestino na forma não absorvível e é fermentado
+                    pelas suas bactérias. Enquanto isso, a caseína, principal proteína dos laticínios, pode desencadear
+                    resposta imune
+                    num indivíduo com APLV (Alergia à Proteína do Leite de Vaca). Nesse sentido, os sintomas de ambas as
+                    condições
+                    abrangem azia, diarreia, dores e inchaço abdominal.</p>
+            </div>
+            <button type="button" class="collapsible"><strong>Glúten</strong> </button>
+            <div class="content">
+                <p>O glúten é uma combinação de proteínas, gliadina e glutenina, presente no trigo,
+                    cevada, malte, centeio e derivados. A restrição a ele pode ser causada por intolerância,
+                    sendo que o consumo provoca danos às paredes intestinais e prejudica a absorção de nutrientes, ou, ainda, por uma
+                    doença celíaca de origem genética.</p>
+            </div>
+            <button type="button" class="collapsible"><strong>Diabetes</strong></button>
+            <div class="content">
+                <p>O que é? Diabetes Mellitus (DM) é uma síndrome metabólica de origem múltipla,
+                    decorrente da falta de insulina e/ou da incapacidade e/ou falta de insulina exercer adequadamente seus efeitos,
+                    caracterizando altas taxa de açúcar no sangue (hiperglicemia) de forma permanente.</p>
+            </div>
+            <button type="button" class="collapsible"><strong>Veganismo</strong></button>
+            <div class="content">
+                <p>Veganismo é a prática de abster-se do uso de produtos animais particularmente, mas não somente,
+                    na alimentação — e também uma filosofia que condena a exploração animal.
+                    Um adepto deste modo de viver e dessa filosofia é conhecido como vegano
+                    ou vegana</p>
+            </div>
+            <br><br>
+            <h3>Origem do termo e Doença</h3>
+            <br><br>
+            <p>As restrições alimentares caracterizam-se pela redução ou exclusão de determinados alimentos de uma
                 dieta. Dessa maneira, praticam-se essas restrições quando a ingestão deles afeta o equilíbrio
-                corporal, devido a condições pré-existentes.</p>
+                corporal, devido a condições pré-existentes.</p><br>
             <p>Os sintomas que levam às restrições são diversos em tipo e intensidade. Assim, suas causas
-                principais são de dois tipos: as alergias alimentares, quando o sistema imunológico de um
-                indivíduo
-                produz <a
-                    href="https://biomedicinabrasil.com.br/imunologia/as-diferentes-classes-de-imunoglobulinas/#:~:text=As%20imunoglobulinas%20(Ig)%20s%C3%A3o%20prote%C3%ADnas,se%20ligar%20a%20um%20ant%C3%ADgeno">imunoglobulinas</a>
-                na presença de um componente do alimento, ou então, as intolerâncias alimentares, representadas
-                pela incapacidade parcial ou total do sistema digestório em processar um composto, devido à falta de
+                incapacidade parcial ou total do sistema digestório em processar um composto, devido à falta de
                 enzimas digestivas específicas para ele. Geralmente, os sintomas associados às intolerâncias são
                 mais restritos ao trato gastrointestinal, enquanto aqueles das alergias se manifestam mais
                 dispersamente no corpo.</p>
-        </article>
-
-        <article class="col-sm-12  text-black">
-            <h3><strong>Restrições Alimentares:</strong></h3>
-            <p>A ingestão de determinados alimentos pode provocar uma série de
-                sintomas indesejados ou até mesmo complicações mais graves em organismos que apresentam
-                condições
-                pré-existentes. Para evitar isso, muitas vezes adota-se restrições alimentares específicas.</p>
-            <h3><strong>Entre os tipos de restrições alimentares mais comuns </strong> </h3>
-            <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/bl-300x200.jpg"
-                class="img-thumbnail" alt="" width="400" height="200">
-        </article>
-
-
-        <article class="col-sm-6  text-black">
-            <h3 class=""><span class=""><strong>Lactose</strong></span>
-            </h3>
-            <p>A intolerância a esse carboidrato do leite ocorre por insuficiência ou ausência da enzima lactase no
-                organismo, sendo que, após ingestão, o açúcar permanece no intestino na forma não absorvível e é
-                fermentado
-                pelas suas bactérias. Enquanto isso, a caseína, principal proteína dos laticínios, pode desencadear
-                resposta imune num indivíduo com APLV (Alergia à Proteína do Leite de Vaca). Nesse sentido, os sintomas
-                de ambas as condições abrangem azia, diarreia, dores e inchaço abdominal.</p>
-            <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/leite-300x200.jpg"
-                class="img-thumbnail" alt="" width="400" height="200">
-        </article>
-
-        <article class="col-sm-6  text-black">
-            <h3 class=""><span class=""><strong>Glúten</strong></span>
-            </h3>
-            <p>
-                O glúten é uma combinação de proteínas, gliadina e glutenina, presente no trigo,
-                cevada, malte, centeio e derivados. A restrição a ele pode ser causada por intolerância,
-                sendo que o consumo provoca danos às paredes intestinais e prejudica a absorção de nutrientes, ou,
-                ainda, por uma <a
-                    href="https://drauziovarella.uol.com.br/alimentacao/doenca-celiaca-como-diagnosticar-e-tratar/">doença
-                    celíaca</a>, de origem genética.</p>
-            <br><br><br>
-
-            <img src="//sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300,h_200/https:/www.farmajunior.com.br/wp-content/uploads/2021/07/bla-300x200.jpg"
-                class="img-thumbnail" alt="" width="400" height="200">
-            <br>
-        </article>
-        <article class="col-sm-6  text-black">
-            <h3 class=""><span class=""><strong>Diabetes</strong></span>
-            </h3>
-            <p>
-                O que é? Diabetes Mellitus (DM) é uma síndrome metabólica de origem múltipla,
-                decorrente da falta de insulina e/ou da incapacidade e/ou falta de insulina exercer
-                adequadamente seus efeitos,
-                caracterizando altas taxa de açúcar no sangue ( hiperglicemia) de forma permanente.</p>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkOlrN5WNa_xU1Bvk1Nh5IPpo4BUpx-fjyKD0gEVaN7g&s"
-                class="img-thumbnail" alt="" width="400" height="200">
-        </article>
-        <article class="col-sm-6  text-black">
-            <h3 class=""><span class=""><strong>Veganismo</span></strong></h3>
-            <p>Veganismo é a prática de abster-se do uso de produtos animais — particularmente, mas não
-                somente, na alimentação — e também uma filosofia que condena a exploração animal.
-                Um adepto deste modo de viver e dessa filosofia é conhecido como vegano ou vegana</p>
-            <br>
-            <img src="https://sportlife.com.br/wp-content/uploads/2021/06/vegano.jpg" class="img-thumbnail" alt=""
-                width="400" height="200">
-            <br>
-        </article>
-        <article class="col-sm-6  text-black ">
-            <h3><strong>Gastrite Aguda</strong></h3>
-            <p>A gastrite é uma inflamação da mucosa interna do estômago que provoca dor intensa, azia e queimação.
-                Perda do apetite, náuseas e vômitos também são sintomas.
-                Gastrite é a inflamação aguda ou crônica da mucosa que reveste as paredes internas do estômago. Essa
-                alteração pode ser provocada por diferentes fatores.
-                A doença pode ser aguda (surge de repente) ou crônica, quando o processo inflamatório se instala aos
-                poucos e leva muito tempo para ser controlado.
-                Gastrite pode acometer toda a mucosa estomacal, ou parte dela. Pode provocar inflamação intensa, sem
-                destruir o revestimento do estômago, ou resultar numa inflamação leve, mas acompanhada de lesão na
-                parede do órgão e perda da mucosa estomacal. Denominada gastrite erosiva, esse tipo pode provocar a
-                formação de úlceras e sangramentos.
-            </p>
-        </article>
-        <article class="col-sm-6  text-black ">
-            <h3><strong>Crustáceos</strong></h3>
-            <p>Ainda mais, os crustáceos são alergênicos comuns, o que os torna vilões para muitas pessoas.
-                A proteína responsável pela alergia é a tropomiosina, presente na carne de camarões e lagostas.
-                Os alérgicos apresentam sintomas como: dificuldade para respirar, tonturas e erupções cutâneas.</p>
-            <img src="https://sp-ao.shortpixel.ai/client/to_webp,q_glossy,ret_img,w_300/https://www.farmajunior.com.br/wp-content/uploads/2021/07/xia-300x225.jpg" 
-            class="img-thumbnail" alt="" width="400" height="200">
-        </article>
-    </main>
-    <section>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <a href="#">Home</a>
-            <a href="#">Meu perfil</a>
-            <a href="#">Restrições</a>
-            <a href="#">Receitas</a>
         </div>
-    </section>
-
-
-    <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
+        <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
         }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
+        
+        
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+            let i;
+            let slides = document.getElementsByClassName("mySlides");
+            let dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
         }
     </script>
 </body>
