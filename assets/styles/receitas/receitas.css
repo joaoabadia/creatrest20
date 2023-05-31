@@ -1,124 +1,119 @@
 * {
     margin: 0;
     padding: 0;
-}
-
-#main {
-    margin-top: 30px;
-    padding: 50px;
-}
-
-.gastrite {
-    font-size: 30px;
-    text-decoration: none;
-    color: black;
-}
-
- {
-    display: block;
-
-}
-.titulo__receitas {
-    font-size: 24px;
-    margin: 20px 0 20px;
-}
-
-.refeicao {
-    width: 250px;
-    height: auto;
-    margin-bottom: 20px;
-}
-
-.ingredientes {
-    font-size: 28px;
-    margin-left: 15px;
-}
-
-ul, il {
-    margin-left: 40px;
-    font-size: 22px;
-    line-height: 1.5;
-    padding-top: 15px;
-}
-
-.preparo {
-    font-size: 24px;
-    text-align: justify;
-    padding-top: 20px;
-    padding-left: 10px;
-    margin-top: 15px;
-    font-weight: bold;
-}
-
-.preparo__text {
-    line-height: 1.5;
-    padding-top: 10px;
-    font-size: 25px;
-    text-align: justify;
-}
-*{
-    padding: 5px;
-
-}
-header{
-    position:relative;
-    width: 100%;
-    margin: 2px;
-    padding: 2px;
-    background-color:rgb(205, 255, 251); 
-}
-main{
-    display:block;
-    padding: 5px;
-    background-color: rgb(205, 255, 251);
-    font-size: 20px;
-    width: 100%;
-    height: auto;
-    
-}
-.sidenav {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+  
+  }
+  
+  main {
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 20px 5px;
+    text-align: center;
+  }
+  
+  main div.p1 {
+    position: relative;
+    text-align: left;
+    inline-size: 50%;
+    background-color: #9029aa;
+    border-radius: 5px;
+    display: inline-block;
+    margin: 10px;
+    padding: 20px;
+    color: white;
+  
+  }
+  
+  .topnav {
+    background-color: #333;
+    overflow: hidden;
+    border-radius: 5px;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
     float: left;
-    background-color: #111;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 70px;
-  }
-  
-  .sidenav a {
-    padding: 8p x 8px 8px 32px;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
     text-decoration: none;
-    font-size: 25px;
-    color: #818181;
-    display: block;
-    transition: 0.3s;
+    font-size: 17px;
+    transition: 1s;
   }
   
-  .sidenav a:hover {
-    color: #f1f1f1;
+  /* Change the color of links on hover */
+  .topnav a:hover {
+    background-color: #9029aa;
+    ;
+    color: f2f2f2;
   }
   
-  .sidenav .closebtn {
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #9029aa;
+    color: white;
+  }
+  
+  .topnav a.log {
+    position: relative;
+    left: 75%;
+  }
+  
+  .topnav a.icon {
+    position: relative;
+    left: 76%;
+  }
+
+.buscar{
+    width: 100%;
+    background-color: #9029aa;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  input{
+    width: 90%;
+    height: 50px;
+    padding-left: 20px ;
+    font-size: 22px;
+    border: 1px solid #ddd;
+    margin: 15px;
+    border-radius: 5px;
+  }
+  #listaReceitas{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    width: 91%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
     position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
+    top: 65px;
   }
+  #listaReceitas li a{
+    display: block;
+    align-items: center;
+    text-decoration: none;
+    height: 50px;
+    font-size: 18px;
+    color: black;
+    border: 1px solid #ddd;
+    background: #f6f6f6;
+    padding: 12px;
   
-  #main {
-    transition: margin-right .5s;
-    padding: 14px;
-    float: right;
-    display: flexbox;
   }
-  
-  @media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
+  #listaReceitas li a:hover{
+    background: #eee;
   }
+  .item-name{
+    margin-left: 15px;
+  }
+
+/* HEADER  */
