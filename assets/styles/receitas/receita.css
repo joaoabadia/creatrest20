@@ -4,15 +4,15 @@
 }
 body {
     color: black;
+    background-color: white;
 }
 
 #main {
-    margin-top: 30px;
     padding: 50px;
 }
 
 .gastrite {
-    font-size: 30px;
+    font-size: 18px;
     text-decoration: none;
     color: black;
 }
@@ -22,22 +22,14 @@ body {
     margin: 20px 0 20px;
 }
 
-.refeicao {
-    width: 250px;
+.img-receita {
+    max-width: 325px !important;
     height: auto;
     margin-bottom: 20px;
 }
 
 .ingredientes {
     font-size: 28px;
-    margin-left: 15px;
-}
-
-ul, il {
-    margin-left: 40px;
-    font-size: 22px;
-    line-height: 1.5;
-    padding-top: 15px;
 }
 
 .preparo {
@@ -52,6 +44,6 @@ ul, il {
 .preparo__text {
     line-height: 1.5;
     padding-top: 10px;
-    font-size: 25px;
+    font-size: 14px;
     text-align: justify;
 }
