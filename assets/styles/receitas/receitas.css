@@ -1,28 +1,61 @@
-
-.logo {
-  width: 100px;
-  display: flex;
-  align-items: center;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.logo img {
-  max-width: 100%;
-  height: auto;
+#main {
+    margin-top: 30px;
+    padding: 50px;
 }
 
-span a {
-  color: #ffffff;
-  display: flex;
-  align-items: center;
-  font-size: 20px;
-  text-decoration: none;
+.gastrite {
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
 }
 
-span a:hover {
-  color: #ffffff;
-  text-decoration: none;
+ {
+    display: block;
+
+}
+.titulo__receitas {
+    font-size: 24px;
+    margin: 20px 0 20px;
 }
 
+.refeicao {
+    width: 250px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.ingredientes {
+    font-size: 28px;
+    margin-left: 15px;
+}
+
+ul, il {
+    margin-left: 40px;
+    font-size: 22px;
+    line-height: 1.5;
+    padding-top: 15px;
+}
+
+.preparo {
+    font-size: 24px;
+    text-align: justify;
+    padding-top: 20px;
+    padding-left: 10px;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+.preparo__text {
+    line-height: 1.5;
+    padding-top: 10px;
+    font-size: 25px;
+    text-align: justify;
+}
 *{
     padding: 5px;
 
@@ -89,4 +122,3 @@ main{
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
   }
-
