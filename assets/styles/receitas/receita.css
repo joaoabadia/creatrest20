@@ -20,16 +20,21 @@ body {
     background-color: #5ea7a2;
     text-decoration: none;
     color: black;
-    
 }
 
+.menu-nav {
+    display: flex;
+    text-align: center;
+    padding-right: 30px;
+    padding-left: 40px;
+}
 .logo {
 width: 130px;
 height: 100px;
 }
 
 #divBusca{
-  background-color:#5ea7a2;
+  background-color:#FFFFF;
   border:solid 2px;
   border-radius:15px;
   width:300px;
@@ -64,10 +69,6 @@ height: 100px;
     padding-bottom: 10px;
 }
 
-.img-receita{
-
-}
-
 .main {
     text-align: center;
     
@@ -92,6 +93,15 @@ height: 100px;
 .lista-ingredientes {
     text-align: left;
     padding-left: 20px;
+}
+
+.list-group-item {
+    position: relative;
+    display: block;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: #FFFFFF;
+    border: 1px solid #dee2e6;
 }
 .preparo {
     font-size: 24px;
