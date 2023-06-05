@@ -7,16 +7,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/assets/styles/homeStyles/home.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
     <title>Home</title>
 </head>
+
 
 <body>
     <header>
         <div class="topnav">
             <a class="active" href="#">Menu</a>
             <a href=>Novidades</a>
-            <a href="../receitas/receitas.html">Receitas</a>
-            <a class="log" href="/pages/users/login.html">Login</a>
+            <a href="/receitas/receitas.html">Receitas</a>
+            <a class="register" href="/users/register.html">Registrar</a>
+            <a class="log" href="/users/login.html">Login</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">
                 <i class="fa fa-bars"></i></a>
         </div>
@@ -27,13 +30,15 @@
         <!-- Full-width images with number and caption text -->
         <div class="mySlides fade">
             <div class="numbertext">1 / 3</div>
-            <img src="/assets/img/frango-ao-iogurte.jpg" style="width:100%" height="500px">
+            <a href="frangoiorgute.html">
+            <img src="/assets/img/frango-ao-iogurte.jpg" style="width:100%" height="500px"></a>
             <div class="text">Frango ao Iorgute</div>
         </div>
 
         <div class="mySlides fade">
             <div class="numbertext">2 / 3</div>
-            <img src="/assets/img/salada-colorida-de-legumes-2.jpg" style="width:100%" height="500px">
+            <a href="saladalegumes.html">
+            <img src="/assets/img/salada-colorida-de-legumes-2.jpg" style="width:100%" height="500px"></a>
             <div class="text">Salada Colorida de Legumes</div>
         </div>
 
@@ -58,8 +63,8 @@
     <!-- Informações da Home -->
     <main>
         <div class="p1">
-            <h2>Restrição Alimentares</h2>
-            <br>
+            <h1 class="grande"> Restrições Alimentares</h1>
+            <br><br>
             <p>A ingestão de determinados alimentos pode provocar uma série de
                 sintomas indesejados ou até mesmo complicações mais graves em organismos que apresentam
                 condições pré-existentes. Para evitar isso, muitas vezes adota-se restrições alimentares específicas.
@@ -82,14 +87,35 @@
             <div class="content">
                 <p>O glúten é uma combinação de proteínas, gliadina e glutenina, presente no trigo,
                     cevada, malte, centeio e derivados. A restrição a ele pode ser causada por intolerância,
-                    sendo que o consumo provoca danos às paredes intestinais e prejudica a absorção de nutrientes, ou, ainda, por uma
+                    sendo que o consumo provoca danos às paredes intestinais e prejudica a absorção de nutrientes, ou,
+                    ainda, por uma
                     doença celíaca de origem genética.</p>
             </div>
             <button type="button" class="collapsible"><strong>Diabetes</strong></button>
             <div class="content">
                 <p>O que é? Diabetes Mellitus (DM) é uma síndrome metabólica de origem múltipla,
-                    decorrente da falta de insulina e/ou da incapacidade e/ou falta de insulina exercer adequadamente seus efeitos,
+                    decorrente da falta de insulina e/ou da incapacidade e/ou falta de insulina exercer adequadamente
+                    seus efeitos,
                     caracterizando altas taxa de açúcar no sangue (hiperglicemia) de forma permanente.</p>
+            </div>
+            <button type="button" class="collapsible"><strong>Crustáceos</strong></button>
+            <div class="content">
+                <p>A alergia a frutos do mar (moluscos e crustáceos) pode provocar choques anafiláticos,
+                    o que causa reações graves e coloca a vida do acometido em risco. Os moluscos são compostos
+                    por mexilhões, polvos, lulas, ostras e lesmas do mar.
+                    Já a classe dos crustáceos é composta por camarões, caranguejos, lagostas e lagostins.</p>
+            </div>
+            <button type="button" class="collapsible"><strong>Vegetarianismo</strong></button>
+            <div class="content">
+                <p>O vegetarianismo é uma prática alimentar que exclui o consumo de derivados animais como a carne
+                    vermelha
+                    e tem como principal fonte de alimentos os vegetais e os fungos.
+                    O vegetarianismo emergiu como um movimento alimentar significativo nas culturas ocidentais. <br><br>
+                    <h4>Qual é a diferença entre vegetarianismo e veganismo?</h4><br><br>
+                    A principal diferença entre veganos e vegetarianos é que os veganos não consomem nada que tenha
+                    origem animal, seja em sua alimentação ou outros produtos, como artigos para higiene, limpeza,
+                    vestuário ou remédios.
+                    Já o vegetariano não come carne, peixe e aves, mas consome outros produtos de origem animal.</p>
             </div>
             <button type="button" class="collapsible"><strong>Veganismo</strong></button>
             <div class="content">
@@ -111,59 +137,67 @@
                 dispersamente no corpo.</p>
         </div>
         <script>
-        function myFunction() {
-            var x = document.getElementById("myTopnav");
-            if (x.className === "topnav") {
-                x.className += " responsive";
-            } else {
-                x.className = "topnav";
-            }
-        }
-        
-        
-        let slideIndex = 1;
-        showSlides(slideIndex);
-        
-        // Next/previous controls
-        function plusSlides(n) {
-            showSlides(slideIndex += n);
-        }
-        
-        // Thumbnail image controls
-        function currentSlide(n) {
-            showSlides(slideIndex = n);
-        }
-        
-        function showSlides(n) {
-            let i;
-            let slides = document.getElementsByClassName("mySlides");
-            let dots = document.getElementsByClassName("dot");
-            if (n > slides.length) { slideIndex = 1 }
-            if (n < 1) { slideIndex = slides.length }
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";
-            }
-            for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-            }
-            slides[slideIndex - 1].style.display = "block";
-            dots[slideIndex - 1].className += " active";
-        }
-        var coll = document.getElementsByClassName("collapsible");
-        var i;
-        
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function () {
-                this.classList.toggle("active");
-                var content = this.nextElementSibling;
-                if (content.style.display === "block") {
-                    content.style.display = "none";
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
                 } else {
-                    content.style.display = "block";
+                    x.className = "topnav";
                 }
-            });
-        }
-    </script>
+            }
+
+
+            let slideIndex = 1;
+            showSlides(slideIndex);
+
+            // Next/previous controls
+            function plusSlides(n) {
+                showSlides(slideIndex += n);
+            }
+
+            // Thumbnail image controls
+            function currentSlide(n) {
+                showSlides(slideIndex = n);
+            }
+
+            function showSlides(n) {
+                let i;
+                let slides = document.getElementsByClassName("mySlides");
+                let dots = document.getElementsByClassName("dot");
+                if (n > slides.length) { slideIndex = 1 }
+                if (n < 1) { slideIndex = slides.length }
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+            }
+            var coll = document.getElementsByClassName("collapsible");
+            var i;
+
+            for (i = 0; i < coll.length; i++) {
+                coll[i].addEventListener("click", function () {
+                    this.classList.toggle("active");
+                    var content = this.nextElementSibling;
+                    if (content.style.display === "block") {
+                        content.style.display = "none";
+                    } else {
+                        content.style.display = "block";
+                    }
+                });
+            }
+            var modal = document.getElementById('id01');
+
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function (event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
+        </script>
 </body>
 
 </html>

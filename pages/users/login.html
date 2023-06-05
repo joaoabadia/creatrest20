@@ -5,52 +5,58 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../../assets/styles/users/login.css">
-    <title>Meu Campo de Login</title>
+    <link rel="stylesheet" href="/assets/styles/user/login.css">
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+    <title>Login CreaRest
+    </title>
 </head>
 
 <body>
-    <form>
-        <h3>Faça Seu Login</h3>
-        <input type="text" name="email" id="email" placeholder=" Seu e-mail">
-        <input type="text" name="senha" placeholder="Sua Senha">
-        <br><br>
-        <input type="submit" name="acao" value="Enviar">
+    <div class="container">
+        <form action="pages/home/home.html">
+          <div class="row">
+            <h2 style="text-align:center">Faça seu Login</h2>
+            <div class="vl">
+              <span class="vl-innertext"></span>
+            </div>
+      
+            <div class="col">
+              <a href="#" class="fb btn">
+                <i class="fa fa-facebook fa-fw"></i> Entrar com o Facebook
+              </a>
+              <a href="#" class="twitter btn">
+                <i class="fa fa-twitter fa-fw"></i> Entrar com o Twitter
+              </a>
+              <a href="#" class="google btn">
+                <i class="fa fa-google fa-fw"></i> Entrar com o Google+
+              </a>
+            </div>
+      
+            <div class="col">
+              <div class="hide-md-lg">
+                <p><i class="fa-sharp fa-light fa-grip-lines-vertical"></i><p>
+              </div>
+      
+              <input type="text" name="username" placeholder="Login" required>
+              <input type="password" name="password" placeholder="Senha" required>
+              <input type="submit" value="Entrar">
+            </div>
+      
+          </div>
+        </form>
+      </div>
+      
+      <div class="bottom-container">
+        <div class="row">
+          <div class="col">
+            <a href="/user/register.html" style="color:rgb(255, 255, 255)" class="btn">Cadastre-se</a>
+          </div>
+          <div class="col">
+            <a href="#" style="color:rgb(255, 255, 255)" class="btn">Esqueceu sua senha?</a>
+          </div>
+        </div>
+      </div>
 
-    </form>
-    <script>
-        var email = document.getElementById('email');
-        var password = document.getElementById('password');
-
-        email.addEventListener('focus', () => {
-            email.style.borderColor = "#8a2be2";
-        });
-        email.addEventListener('blur', () => {
-            email.style.borderColor = "#ccc";
-        });
-        password.addEventListener('focus', () => {
-            password.style.borderColor = "#8a2be2";
-        });
-        password.addEventListener('blur', () => {
-            password.style.borderColor = "#ccc";
-        });
-        // Get the input field
-        var input = document.getElementById("myInput");
-
-        // Get the warning text
-        var text = document.getElementById("text");
-
-        // When the user presses any key on the keyboard, run the function
-        input.addEventListener("keyup", function (event) {
-
-            // If "caps lock" is pressed, display the warning text
-            if (event.getModifierState("CapsLock")) {
-                text.style.display = "block";
-            } else {
-                text.style.display = "none"
-            }
-        });
-    </script>
 </body>
 
 </html>
