@@ -1,119 +1,89 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
+<html lang="en">
+
+<head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arroz de Couve-flor com Iscas de Frango</title>
-    <link rel="stylesheet" href="../../../assets/styles/receitas/receita.css">
-    <link rel="stylesheet" href="../../assets/styles/homeStyles/receitasPreferidas.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
-    <link rel="shortcut icon" href="../../assets/img/Logo.png" type="image/x-icon">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"> </script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Tienne:wght@700&display=swap" rel="stylesheet">
-<link rel="icon" href="../../../assets/img/Logo.png">
+    <link rel="stylesheet" href="assets/styles/receitas/receitas.css">
+    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+    <title>Receita de Arroz com Frango</title>
 </head>
-  <body>
-    <header>
-      <nav class="navbar d-flex navbar-expand-lg">
-          <div class="container-fluid">
-              <span>
-                  <a href="/pages/home/home.html" >
-                      <img class="logo" src="../../../assets/img/Logo.png " alt="logo creatrest"/>
-                  </a>
-              </span>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                  aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-          </div>
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                  <ul class="botoes">
-                      <li class="nav-item">
-                          <a  aria-current="page" href="../../home/home.html">Home</a>
-                      </li>
-                      <li><a href="../receitas.html" role= "button">Categoria</a></li>
-                  </ul>
-                  
-                  <div id="mini-menu">
-                      <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
-                      <ul>
-                        <li>Perfil</li>
-                        <li>Favoritas</li>
-                      </ul>
-                    </div>
 
-                  <form class="barra-de-pesquisa" role="search">
-                  <input class="barra-de-pesquisa" type="search" placeholder="O que você procura?" aria-label="search" />
-                  <button class="btn btn-outline-success" type="submit">Pesquisar</button>
-                  </form>
-                  <ul>
-                    <li><a class="botao-login" href="../../users/login.html" role="button">Login</a></li>
-                    <li><a class="botao-sair" href="../users/login.html" role="button">Sair</a></li>
-                  </ul>
-              </nav>
+<body>
+        <header>
+            <div class="topnav">
+                <a class="" href="/home/home.html">Menu</a>
+                <a href=>Novidades</a>
+                <a class="active" href="receitas.html">Receitas</a>
+                <a class="register" href="/user/register.html">Registrar</a>
+                <a class="log" href="/user/login.html">Login</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                    <i class="fa fa-bars"></i></a>
             </div>
-      </div>
-  </header>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-      <section id="main">
-        Categoria: <a class="gastrite" href="#">Gastrite Aguda</a>
-        <h3 class="nome-receita">Arroz de Couve-flor com Iscas de Frango</h3>
-        <img class="img-receita img-fluid rounded mx-auto d-block" src="/assets/img/imgReceitas/receita-arrozcomfrango.jpeg" alt="prato de refeicao">
-        <h4 class="ingredientes">Ingredientes</h4>
-
-        <ul class="lista-ingredientes">
-          <li class="list-group-item">
-            1 cabeça de Couve-flor crua
-          </li>
-          <li class="list-group-item">
-            ½ cebola
-          </li>
-          <li class="list-group-item">
-            1 dente de alho
-          </li>
-          <li class="list-group-item">
-            2 colheres de sopa de azeite de oliva extravirgem
-          </li>
-          <li class="list-group-item">
-            ½ colher de chá de sal
-          </li>
-          <li class="list-group-item">
-            Salsinha a gosto
-          </li>
-          <li class="list-group-item">
-            100 g de frango cortado em tiras
-          </li>
-        </ul>
-        <h4 class="ingredientes">Modo de Preparo</h4>
+        </header>
+        <div class="buscar">
+            <input type="text" onkeyup="Filtrar()" id="myInput" placeholder="O que você procura?">
+            <ul id="listaReceitas">
+                <li>
+                    <a href="">
+                        <img width="50" src="//frango-ao-iogurte.jpg" alt="">
+                        <span class="item-name">Frango ao Iorgute</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img width="50" height="30" src="/estudo/receita-arrozcomfrango.jpeg" alt="">
+                        <span class="item-name">Arroz com Frango</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img width="50" src="/estudo/salada-colorida-de-legumes-2.jpg" alt="">
+                        <span class="item-name">Salada Colorida de Legumes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        <img width="50" src="/estudo/salada-tropical-com-rucula.jpg" alt="">
+                        <span class="item-name">Salada Tropical com Rucula</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <main>
+        <h2>Arroz de Couve-flor com Iscas de Frango </h2><br><br>
+        <img class="" width="200px" src="/assets/img/receita-arrozcomfrango.jpeg" alt="prato de refeicao">
+        <h4>Ingredientes</h4><br><br>
+        <ul class="lista">
+            <li>1 cabeça de Couve-flor crua</li><br>
+            <li>½ cebola</li><br>
+            <li>1 dente de alho</li><br>
+            <li>½ colher de chá de sal</li><br>
+            <li>2 colheres de sopa de azeite de oliva extravirgem</li><br>
+            <li>Salsinha a gosto</li><br>
+            <li>100 g de frango cortado em tiras</li><br>
+        </ul><br><br>
+        <h2>Modo de Preparo</h2>
+        <br>
         <p class="preparo__text">
-          Coloque a couve-flor lavada e crua em um processador ou liquidificador e bata até que
-            fique em pedaços
-            pequenos. Em uma panela, coloque 1 colher de azeite extravirgem, adicione cebola, alho e refogue.
-            Junte a couve-flor e tempere com sal. Misture muito bem, adicione a água, tampe a panela e deixe
-            cozinhar em fogo baixo por 4 minutos. Finalize com salsinha picada e prontinho!
+            Coloque a couve-flor lavada e crua em um processador ou liquidificador e bata até que
+            fique em pedaços. </p>
+
+        <p> Cozinhar em fogo baixo por 4 minutos. Finalize com salsinha picada e prontinho!
         </p>
-      </section>
-
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="../../assets/scripts/receitasScripts/receitas.js"></script>
-    
+    </main>
     <script>
-        function openNav() {
-            document.getElementById("mySidenav").style.width = "250px";
-            document.getElementById("main").style.marginLeft = "250px";
-        }
-
-        function closeNav() {
-            document.getElementById("mySidenav").style.width = "0";
-            document.getElementById("main").style.marginLeft = "0";
-        }
+        function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
     </script>
-  </body>
+</body>
+
 </html>
