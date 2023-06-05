@@ -32,6 +32,19 @@ body {
 width: 130px;
 height: 100px;
 }
+.menu-nav-child {
+    padding: 6px 12px;
+    border: 1px solid #dee2e6;
+    margin-right: 20px;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-search {
+    border: 4px;
+    text-decoration: none;
+    text-align: center;
+}
 
 #divBusca{
   background-color:#FFFFF;
@@ -42,7 +55,7 @@ height: 100px;
 
 #txtBusca{
     float: left;
-    background-color: transparent;
+    background-color: #FFFFFF;
     padding-left: 75px;
     font-style: italic;
     font-size: 20px;
@@ -57,11 +70,27 @@ height: 100px;
     color: black;
 }
 
-.celiacos {
-    font-size: 18px;
-    text-decoration: none;
+.barra-categoria {
+    font-size: 20px;
     color: black;
     text-align: left;
+    /* margin-top: 15px; */
+    margin-bottom: 20px;
+    background-color: #f2f2f2;
+    padding: 15px 30px;
+}
+
+.barra-categoria a {
+    text-decoration: none;
+}
+
+.pesquisar {
+    display: flex;
+    column-gap: 5px;
+}
+.pesquisar a {
+    display: flex;
+    align-items: center;
 }
 
 .nome-receita {
@@ -70,8 +99,9 @@ height: 100px;
 }
 
 .main {
+    width: 50%;
     text-align: center;
-    
+    margin-left: 335px;
 }
 .titulo__receitas {
     font-size: 24px;
@@ -82,17 +112,45 @@ height: 100px;
     max-width: 325px !important;
     height: auto;
     margin-bottom: 20px;
+    border: 2px solid #bcc7c6;
 }
 
-.ingredientes {
+.titulo-secao {
     font-size: 28px;
     font-family: 'Inter', sans-serif;
     background-color: #5ea7a2;
 }
 
+.informacoes-preparo {
+    display: flex;
+    margin: 20px 0;
+    column-gap: 15px;
+    justify-content: space-between;
+}
+
+.informacoes-preparo .dados-receita {
+    display: flex;
+    padding: 10px;
+    border-radius: 8px;
+    column-gap: 15px;
+    align-items: center;
+    background-color: #5ea7a2;
+    color: white;
+}
+
+.informacoes-preparo .dados-receita img {
+    width: 50px;
+}
+
+.dados-receita__info span {
+    display: block;
+    text-align: left;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
 .lista-ingredientes {
     text-align: left;
-    padding-left: 20px;
 }
 
 .list-group-item {
@@ -114,15 +172,37 @@ height: 100px;
 
 .preparo__text {
     line-height: 1.5;
-    padding-top: 10px;
     font-size: 14px;
     text-align: justify;
-    padding-left: 20px;
+}
+
+.receitas-relacionadas-container {
+    margin-top: 50px;
+    padding: 10px 100px;
+}
+
+.receitas-relacionadas {
+    display: flex;
+    margin-top: 10px;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.receitas-relacionadas__receita img {
+    display: block;
+    max-width: 250px;
+    margin-bottom: 15px;
+}
+
+.receitas-relacionadas__receita a {
+    text-decoration: none;
 }
 
 .footer {
-    background-color: #3eb3ab;
+    background-color: #5ea7a2;
     color: black;
     text-align: center;
     padding: 15px;
+    margin-top: 20px;
+    width: 100%;
 }
