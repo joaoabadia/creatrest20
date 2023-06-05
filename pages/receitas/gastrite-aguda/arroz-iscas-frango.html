@@ -1,89 +1,141 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/styles/receitas/receitas.css">
-    <link rel="shortcut icon" href="/assets/img/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../../assets/styles/receitas/receita.css">
+    <link rel="icon" href="../../../assets/img/Logo.png">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Tienne:wght@700&amp;display=swap" rel="stylesheet">
     <title>Receita de Arroz com Frango</title>
 </head>
 
 <body>
-        <header>
-            <div class="topnav">
-                <a class="" href="/home/home.html">Menu</a>
-                <a href=>Novidades</a>
-                <a class="active" href="receitas.html">Receitas</a>
-                <a class="register" href="/user/register.html">Registrar</a>
-                <a class="log" href="/user/login.html">Login</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                    <i class="fa fa-bars"></i></a>
-            </div>
-        </header>
-        <div class="buscar">
-            <input type="text" onkeyup="Filtrar()" id="myInput" placeholder="O que você procura?">
-            <ul id="listaReceitas">
-                <li>
-                    <a href="">
-                        <img width="50" src="//frango-ao-iogurte.jpg" alt="">
-                        <span class="item-name">Frango ao Iorgute</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img width="50" height="30" src="/estudo/receita-arrozcomfrango.jpeg" alt="">
-                        <span class="item-name">Arroz com Frango</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img width="50" src="/estudo/salada-colorida-de-legumes-2.jpg" alt="">
-                        <span class="item-name">Salada Colorida de Legumes</span>
-                    </a>
-                </li>
-                <li>
-                    <a href="">
-                        <img width="50" src="/estudo/salada-tropical-com-rucula.jpg" alt="">
-                        <span class="item-name">Salada Tropical com Rucula</span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </header>
-    <main>
-        <h2>Arroz de Couve-flor com Iscas de Frango </h2><br><br>
-        <img class="" width="200px" src="/assets/img/receita-arrozcomfrango.jpeg" alt="prato de refeicao">
-        <h4>Ingredientes</h4><br><br>
-        <ul class="lista">
-            <li>1 cabeça de Couve-flor crua</li><br>
-            <li>½ cebola</li><br>
-            <li>1 dente de alho</li><br>
-            <li>½ colher de chá de sal</li><br>
-            <li>2 colheres de sopa de azeite de oliva extravirgem</li><br>
-            <li>Salsinha a gosto</li><br>
-            <li>100 g de frango cortado em tiras</li><br>
-        </ul><br><br>
-        <h2>Modo de Preparo</h2>
-        <br>
-        <p class="preparo__text">
-            Coloque a couve-flor lavada e crua em um processador ou liquidificador e bata até que
-            fique em pedaços. </p>
+        
+            <header class="cabecalho">
 
-        <p> Cozinhar em fogo baixo por 4 minutos. Finalize com salsinha picada e prontinho!
-        </p>
-    </main>
-    <script>
-        function myFunction() {
-                var x = document.getElementById("myTopnav");
-                if (x.className === "topnav") {
-                    x.className += " responsive";
-                } else {
-                    x.className = "topnav";
-                }
-            }
-    </script>
+                <a href="/pages/home/home.html">
+                    <img class="logo" src="../../../assets/img/Logo.png " alt="logo creatrest">
+                </a>
+        
+                <nav class="menu-nav">
+                    <a href="/pages/home/home.html" class="menu-nav-child">Home</a>
+                    <a href="../receitas.html" class="menu-nav-child">Categorias de Receitas</a>
+                </nav>
+                <div class="pesquisar">
+                    <input id="txtBusca" placeholder="O que você procura?">
+                    <a href="../../users/login.html" class="menu-nav-child">Pesquisar</a>
+                </div>
+        
+                <nav class="menu-nav">
+                    <a href="../../users/login.html" class="menu-nav-child">Login</a>
+                    <a href="/pages/home/home.html" class="menu-nav-child">Sair</a>
+                </nav>
+            </header>
+            <div class="barra-categoria"> Categoria: <a href="#">Grastrite Aguda</a></div>
+            <main class="main">
+
+                <h3 class="nome-receita">PArroz de Couve-flor com Iscas de Frango</h3>
+                <img class="img-receita" src="../../../assets/img/imgReceitas/receita-arrozcomfrango.jpeg" alt="prato de refeicao">
+                <div class="informacoes-preparo">
+                    <div class="dados-receita">
+                        <div>
+                            <img src="../../../assets/img/imgReceitas/cronometro.png" alt="cronômetro representando o tempo de duração">
+                        </div>
+                        <div class="dados-receita__info">
+                            Tempo de preparo:
+                            <span>25 min</span>
+                        </div>
+                    </div>
+                    <div class="dados-receita">
+                        <div>
+                            <img src="../../../assets/img/imgReceitas/portion.png" alt="ícone representando quantidade de porções">
+                        </div>
+                        <div class="dados-receita__info">
+                            Rendimento:
+                            <span>25min</span>
+                        </div>
+                    </div>
+                    <div class="dados-receita">
+                        <div>
+                            <img src="../../../assets/img/imgReceitas/difiuldade.png" alt="ícone representando o nível de dificuldade">
+                        </div>
+                        <div class="dados-receita__info">
+                            Dificuldade:
+                            <span>25min</span>
+                        </div>
+                    </div>
+                </div>
+                <section>
+                    <h4 class="titulo-secao">Ingredientes</h4>
+        
+                    <ul class="lista-ingredientes">
+                        <li class="list-group-item">
+                            1 cabeça de Couve-flor crua
+                        </li>
+                        <li class="list-group-item">
+                            ½ cebola
+                        </li>
+                        <li class="list-group-item">
+                            1 dente de alho
+                        </li>
+                        <li class="list-group-item">
+                            ½ colher de chá de sal
+                        </li>
+                        <li class="list-group-item">
+                            2 colheres de sopa de azeite de oliva extravirgem
+                        </li>
+                        <li class="list-group-item">
+                            Salsinha a gosto
+                        </li>
+                        <li class="list-group-item">
+                            100 g de frango cortado em tiras
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h4 class="titulo-secao">Modo de Preparo</h4>
+                    <ol class="preparo__text">
+                        <li class="list-group-item">Coloque a couve-flor lavada e crua em um processador ou liquidificador e bata até que
+                            fique em pedaços.</li>
+                        <li class="list-group-item">Cozinhar em fogo baixo por 4 minutos. Finalize com salsinha picada e prontinho!</li>
+                        </li>
+                    </ol>
+                </section>
+            </main>
+            <aside class="receitas-relacionadas-container">
+                <h4 class="">Receitas Relacionadas</h4>
+                <div class="receitas-relacionadas">
+                    <div class="receitas-relacionadas__receita">
+                        <a href="">
+                            <img src="../../../assets/img/frango-ao-iogurte.jpg" alt="Imagem de receita relacionada: Frango ao Iogurt">
+                            <span>Frango ao Iogurte</span>
+                        </a>
+                    </div>
+                    <div class="receitas-relacionadas__receita">
+                        <a href="">
+                            <img src="../../../assets/img/frango-ao-iogurte.jpg" alt="Imagem de receita relacionada: Frango ao Iogurt">
+                            <span>Frango ao Iogurte</span>
+                        </a>
+                    </div>
+                    <div class="receitas-relacionadas__receita">
+                        <a href="">
+                            <img src="../../../assets/img/frango-ao-iogurte.jpg" alt="Imagem de receita relacionada: Frango ao Iogurt">
+                            <span>Frango ao Iogurte</span>
+                        </a>
+                    </div>
+                    <div class="receitas-relacionadas__receita">
+                        <a href="">
+                            <img src="../../../assets/img/frango-ao-iogurte.jpg" alt="Imagem de receita relacionada: Frango ao Iogurt">
+                            <span>Frango ao Iogurte</span>
+                        </a>
+                    </div>
+                </div>
+            </aside>
+            <footer class="footer">
+                Todos os direitos reservados à CrestRest.
+            </footer>
 </body>
 
 </html>
