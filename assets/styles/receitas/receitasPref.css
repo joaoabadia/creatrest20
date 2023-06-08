@@ -3,22 +3,19 @@
   padding: 0%;
   box-sizing: border-box;
 }
-<<<<<<< HEAD:assets/styles/receitas/receitasPref.css
+
   
 .h2{
     align-items: center;
 }
 
-
- .topnav {
-=======
+ .topnav 
 
 body {
   background-color: #f1f1f1;
   font-family: Arial;
 }
 
-/* Center website */
 .main {
   margin: auto;
 }
@@ -37,38 +34,37 @@ h1 {
     color: black;
 }
 
-/* Add padding BETWEEN each column (if you want) */
+
 .row,
 .row > .column {
   padding: 8px;
 }
 
-/* Create three equal columns that floats next to each other */
+
 .column {
   float: left;
   width: 33.33%;
-  display: none; /* Hide columns by default */
+  display: none; 
 }
 
-/* Clear floats after rows */
+
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
+
 .content {
   background-color: white;
   padding: 10px;
 }
 
-/* The "show" class is added to the filtered elements */
+
 .show {
   display: block;
 }
 
-/* Style the buttons */
 .btn {
   border: none;
   outline: none;
@@ -77,25 +73,22 @@ h1 {
   cursor: pointer;
 }
 
-/* Add a grey background color on mouse-over */
+
 .btn:hover {
   background-color: #ddd;
 }
 
-/* Add a dark background color to the active button */
 .btn.active {
   background-color: #666;
    color: white;
 }
 
 .topnav {
->>>>>>> 3bf9d4919bc36d44a12886b14327e3d788db10c4:assets/styles/receitas/receitas.css
   background-color: #333;
   overflow: hidden;
   padding: 1px;
 }
 
-/* Style the links inside the navigation bar */
 .topnav a {
   float: left;
   color: #f2f2f2;
@@ -107,13 +100,12 @@ h1 {
   position: relative;
 }
 
-/* Change the color of links on hover */
+
 .topnav a:hover {
   background-color: #5ea7a2;
   color: #f2f2f2
 }
 
-/* Add a color to the active/current link */
 .topnav a.active {
   background-color: #5ea7a2;
   color: white;
@@ -136,13 +128,11 @@ h1 {
   padding-top: 20px;
 }
 
-<<<<<<< HEAD:assets/styles/receitas/receitasPref.css
-/* Hide the images by default */
+
 .mySlides {
   display: none;
 }
 
-/* Next & previous buttons */
 .prev,
 .next {
   cursor: pointer;
@@ -159,13 +149,12 @@ h1 {
   user-select: none;
 }
 
-/* Position the "next button" to the right */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover,
 .next:hover {
   background-color: #5ea7a2;
@@ -182,7 +171,7 @@ h1 {
   text-align: center;
 }
 
-/* Number text (1/3 etc) */
+
 .numbertext {
   color: #f2f2f2;
   font-size: 12px;
@@ -191,7 +180,6 @@ h1 {
   top: 0;
 }
 
-/* The dots/bullets/indicators */
 .dot {
   cursor: pointer;
   height: 15px;
@@ -208,7 +196,6 @@ h1 {
   background-color: #5ea7a2;
 }
 
-/* Fading animation */
 .fade {
   animation-name: fade;
   animation-duration: 1.5s;
@@ -223,7 +210,7 @@ h1 {
     opacity: 1
   }
 }
-/* Style the button that is used to open and close the collapsible content */
+
 .collapsible {
   background-color:#5ea7a2;
   color: white;
@@ -238,12 +225,11 @@ h1 {
   border-bottom: #5ea7a2;
 }
 
-/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+
 .active, .collapsible:hover {
   background-color: #5ea7a2;
 }
 
-/* Style the collapsible content. Note: hidden by default */
 .content {
   padding: 8px 18px;
   display: none;
@@ -305,14 +291,13 @@ h1 {
     transition: width 0.4s ease-in-out;
   }
   
-  /* When the input field gets focus, change its width to 100% */
+  
   input[type=text]:focus {
     width: 95%;
 }
 
-=======
+
 .btnspace {
   padding-top: 20px;
  }
  
->>>>>>> 3bf9d4919bc36d44a12886b14327e3d788db10c4:assets/styles/receitas/receitas.css
