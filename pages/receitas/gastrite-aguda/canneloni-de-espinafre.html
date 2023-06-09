@@ -14,81 +14,57 @@
 </head>
 
 <body>
-    <header class="cabecalho">
-
-        <a href="/pages/home/home.html">
-            <img class="logo" src="../../../assets/img/Logo.png " alt="logo creatrest">
-        </a>
-
-        <nav class="menu-nav">
-            <a href="/pages/home/home.html" class="menu-nav-child">Home</a>
-            <a href="../receitas.html" class="menu-nav-child">Categorias de Receitas</a>
-        </nav>
-        <div class="pesquisar">
-            <input id="txtBusca" placeholder="O que você procura?">
-            <a href="../../users/login.html" class="menu-nav-child">Pesquisar</a>
+    <header>
+        <div class="topnav">
+            <div>
+                <a class="active" href="#">Menu</a>
+                <a href=>Novidades</a>
+                <a href=" /pages/receitas/receitas.html">Receitas</a>
+            </div>
+            <div>
+                <a class="register" href="/users/register.html">Registrar</a>
+                <a class="log" href="/users/login.html">Login</a>
+                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+            </div>
         </div>
-
-        <nav class="menu-nav">
-            <a href="../../users/login.html" class="menu-nav-child">Login</a>
-            <a href="/pages/home/home.html" class="menu-nav-child">Sair</a>
-        </nav>
     </header>
-    <div class="barra-categoria"> Categoria: <a href="#">Grastrite Aguda</a></div>
-    <main class="main">
     <div class="barra-categoria"> Categoria: <a href="#">Grastrite Aguda</a></div>
     <main class="main">
         <h3 class="nome-receita">Canneloni de Espinafre</h3>
         <img class="img-receita" src="../../../assets/img/imgReceitas/Canneloni de espinafre.jpg"
             alt="prato de refeicao">
-        <div class="informacoes-preparo">
-            <div class="dados-receita">
-                <div>
-                    <img src="../../../assets/img/imgReceitas/cronometro.png"
-                        alt="cronômetro representando o tempo de duração">
+            <div class="informacoes-preparo">
+                <div class="dados-receita">
+                    <div>
+                        <img src="../../../assets/img/imgReceitas/cronometro.png"
+                            alt="cronômetro representando o tempo de duração">
+                    </div>
+                    <div class="dados-receita__info">
+                        Tempo de preparo:
+                        <span>55 min</span>
+                    </div>
                 </div>
-                <div class="dados-receita__info">
-                    Tempo de preparo:
-                    <span>25 min</span>
+                <div class="dados-receita">
+                    <div>
+                        <img src="../../../assets/img/imgReceitas/portion.png"
+                            alt="ícone representando quantidade de porções">
+                    </div>
+                    <div class="dados-receita__info">
+                        Rendimento:
+                        <span>1 bolo médio</span>
+                    </div>
                 </div>
-            </div>
-            <div class="dados-receita">
-                <div>
-                    <img src="../../../assets/img/imgReceitas/portion.png"
-                        alt="ícone representando quantidade de porções">
-                </div>
-                <div class="dados-receita__info">
-                    Rendimento:
-                    <span>6 unidades</span>
-                </div>
-            </div>
-            <div class="dados-receita">
-                <div>
-                    <img src="../../../assets/img/imgReceitas/difiuldade.png"
-                        alt="ícone representando o nível de dificuldade">
-                </div>
-                <div class="dados-receita__info">
-                    Dificuldade:
-                    <span>Médio</span>
-                </div>
-            </div>
-                </div>
-                <div class="dados-receita__info">
-                    Rendimento:
-                    <span>6 unidades</span>
+                <div class="dados-receita">
+                    <div>
+                        <img src="../../../assets/img/imgReceitas/difiuldade.png"
+                            alt="ícone representando o nível de dificuldade">
+                    </div>
+                    <div class="dados-receita__info">
+                        Dificuldade:
+                        <span>Fácil</span>
+                    </div>
                 </div>
             </div>
-            <div class="dados-receita">
-                <div>
-                    <img src="../../../assets/img/imgReceitas/difiuldade.png"
-                        alt="ícone representando o nível de dificuldade">
-                </div>
-                <div class="dados-receita__info">
-                    Dificuldade:
-                    <span>25min</span>
-                </div>
-            </div>
-        </div>
         <section>
             <h4 class="titulo-secao">Ingredientes</h4>
 
@@ -132,6 +108,7 @@
     <aside class="receitas-relacionadas-container">
         <h4 class="">Receitas Relacionadas</h4>
         <div class="receitas-relacionadas">
+
             <div class="receitas-relacionadas__receita">
                 <a href="../gastrite-aguda/almondegas-de-berinjela.html">
                     <img src="../../../assets/img/imgReceitas/Almôndegas de berinjela.jpg"
