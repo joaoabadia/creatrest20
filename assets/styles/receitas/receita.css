@@ -13,6 +13,9 @@ body {
 }
 
 .topnav {
+    /* É assim que se faz */
+    display: flex;
+    justify-content: space-between;
     background-color: #333;
     overflow: hidden;
     padding: 1px;
@@ -43,12 +46,8 @@ body {
   }
   
   .topnav a.log {
-    position: fixed;
-    left: 90%;
   }
   .topnav a.register {
-    position: fixed;
-    left: 84%;
   }
   .topnav a.icon {
     position: fixed;
@@ -144,7 +143,8 @@ height: 100px;
 .main {
     width: 50%;
     text-align: center;
-    margin-left: 335px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .titulo__receitas {
     font-size: 24px;
@@ -167,8 +167,9 @@ height: 100px;
 .informacoes-preparo {
     display: flex;
     margin: 20px 0;
-    column-gap: 15px;
-    justify-content: space-between;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .informacoes-preparo .dados-receita {
@@ -183,6 +184,10 @@ height: 100px;
 
 .informacoes-preparo .dados-receita img {
     width: 50px;
+}
+
+.dados-receita__info {
+    flex-shrink: 1;
 }
 
 .dados-receita__info span {
@@ -235,10 +240,13 @@ height: 100px;
     display: block;
     max-width: 190px;
     margin-bottom: 15px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .receitas-relacionadas__receita a {
     text-decoration: none;
+    text-align: center;
 }
 
 .footer {
@@ -247,5 +255,4 @@ height: 100px;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    width: 100%;
 }
