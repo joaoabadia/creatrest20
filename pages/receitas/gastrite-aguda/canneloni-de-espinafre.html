@@ -14,19 +14,30 @@
 </head>
 
 <body>
-    <header>
-        <div class="topnav">
-            <a class="active" href="#">Menu</a>
-            <a href=>Novidades</a>
-            <a href="/receitas/receitas.html">Receitas</a>
-            <a class="register" href="/users/register.html">Registrar</a>
-            <a class="log" href="/users/login.html">Login</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
+    <header class="cabecalho">
+
+        <a href="/pages/home/home.html">
+            <img class="logo" src="../../../assets/img/Logo.png " alt="logo creatrest">
+        </a>
+
+        <nav class="menu-nav">
+            <a href="/pages/home/home.html" class="menu-nav-child">Home</a>
+            <a href="../receitas.html" class="menu-nav-child">Categorias de Receitas</a>
+        </nav>
+        <div class="pesquisar">
+            <input id="txtBusca" placeholder="O que você procura?">
+            <a href="../../users/login.html" class="menu-nav-child">Pesquisar</a>
         </div>
+
+        <nav class="menu-nav">
+            <a href="../../users/login.html" class="menu-nav-child">Login</a>
+            <a href="/pages/home/home.html" class="menu-nav-child">Sair</a>
+        </nav>
     </header>
     <div class="barra-categoria"> Categoria: <a href="#">Grastrite Aguda</a></div>
     <main class="main">
-
+    <div class="barra-categoria"> Categoria: <a href="#">Grastrite Aguda</a></div>
+    <main class="main">
         <h3 class="nome-receita">Canneloni de Espinafre</h3>
         <img class="img-receita" src="../../../assets/img/imgReceitas/Canneloni de espinafre.jpg"
             alt="prato de refeicao">
@@ -45,6 +56,22 @@
                 <div>
                     <img src="../../../assets/img/imgReceitas/portion.png"
                         alt="ícone representando quantidade de porções">
+                </div>
+                <div class="dados-receita__info">
+                    Rendimento:
+                    <span>6 unidades</span>
+                </div>
+            </div>
+            <div class="dados-receita">
+                <div>
+                    <img src="../../../assets/img/imgReceitas/difiuldade.png"
+                        alt="ícone representando o nível de dificuldade">
+                </div>
+                <div class="dados-receita__info">
+                    Dificuldade:
+                    <span>Médio</span>
+                </div>
+            </div>
                 </div>
                 <div class="dados-receita__info">
                     Rendimento:
@@ -106,32 +133,31 @@
         <h4 class="">Receitas Relacionadas</h4>
         <div class="receitas-relacionadas">
             <div class="receitas-relacionadas__receita">
-                <a href="">
-                    <img src="../../../assets/img/frango-ao-iogurte.jpg"
-                        alt="Imagem de receita relacionada: Frango ao Iogurt">
-                    <span>Frango ao Iogurte</span>
+                <a href="../gastrite-aguda/almondegas-de-berinjela.html">
+                    <img src="../../../assets/img/imgReceitas/Almôndegas de berinjela.jpg"
+                        alt="Imagem de receita relacionada: Almondegas de Berinjela">
+                    <span>Almondegas de Berinjela</span>
                 </a>
             </div>
             <div class="receitas-relacionadas__receita">
-                <a href="">
-                    <img src="../../../assets/img/frango-ao-iogurte.jpg"
-                        alt="Imagem de receita relacionada: Frango ao Iogurt">
-                    <span>Frango ao Iogurte</span>
+                <a href="../gastrite-aguda/hamburguer-de-aveia.html">
+                    <img src="../../../assets/img/imgReceitas/Hambúrguer de aveia.jpg"
+                        alt="Imagem de receita relacionada: Hambúrguer de Aveia">
+                    <span>Hambúrguer de Aveia</span>
                 </a>
             </div>
             <div class="receitas-relacionadas__receita">
-                <a href="">
-                    <img src="../../../assets/img/frango-ao-iogurte.jpg"
-                        alt="Imagem de receita relacionada: Frango ao Iogurt">
-                    <span>Frango ao Iogurte</span>
+                <a href="../gastrite-aguda/arroz-iscas-frango.html">
+                    <img src="../../../assets/img/imgReceitas/receita-arrozcomfrango.jpeg"
+                        alt="Imagem de receita relacionada:Arroz com Iscas de Frango">
+                    <span>Arroz com Iscas de Frango</span>
                 </a>
             </div>
             <div class="receitas-relacionadas__receita">
-                <a href="">
-                    <img src="../../../assets/img/frango-ao-iogurte.jpg"
-                        alt="Imagem de receita relacionada: Frango ao Iogurt">
-                    <span>Frango ao Iogurte</span>
-                </a>
+                <a href="../gastrite-aguda/taco-de-alface-com-frango-e-legumes.html">
+                    <img src="../../../assets/img/imgReceitas/Taco de alface com frango e legumes.jpg"
+                        alt="Imagem de receita relacionada: Taco de Alface com Frango">
+                    <span>Taco de Alface com Frango</span>
             </div>
         </div>
     </aside>
