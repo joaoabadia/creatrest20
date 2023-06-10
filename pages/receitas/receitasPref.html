@@ -1,57 +1,284 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/creatrest20/assets/styles/receitas/receitasPref.css">
-    <link rel="shortcut icon" href="/estudo/logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="../../assets/styles/receitas/receitas.css">
+    <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon">
+    <title>CreatRest</title>
 </head>
 
 <body>
     <header>
         <div class="topnav">
-            <a class="" href="home.html">Menu</a>
+            <a class="" href="#">Menu</a>
             <a href=>Novidades</a>
-            <a class="active" href="receitasPref.html">Receitas</a>
-            <a class="register" href="userRegister.html">Registrar</a>
-            <a class="log" href="login.html">Login</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i></a>
+            <a href="receitas.html">Receitas</a>
+            <a class="register" href="/users/register.html">Registrar</a>
+            <a class="log" href="/users/login.html">Login</a>
         </div>
     </header>
-    <div class="buscar">
-        <input type="text" onkeyup="Filtrar()" id="myInput" placeholder="O que você procura?">
-        <ul id="listaReceitas">
-            <li>
-                <a href="">
-                    <img width="50" src="/estudo/frango-ao-iogurte.jpg" alt="">
-                    <span class="item-name">Frango ao Iorgute</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img width="50" height="30" src="/estudo/receita-arrozcomfrango.jpeg" alt="">
-                    <span class="item-name">Arroz com Frango</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img width="50" src="/estudo/salada-colorida-de-legumes-2.jpg" alt="">
-                    <span class="item-name">Salada Colorida de Legumes</span>
-                </a>
-            </li>
-            <li>
-                <a href="">
-                    <img width="50" src="/estudo/salada-tropical-com-rucula.jpg"  alt="">
-                    <span class="item-name">Salada Tropical com Rucula</span>
-                </a>
-            </li>
-        </ul>
+    <div class="myBtnContainer">
+        <h2>Categoria de Receitas</h2>
+        <div class="btnspace">
+            <button class="btn active" onclick="filterSelection('all')"> Todas</button>
+            <button class="btn" onclick="filterSelection('celiacos')"> Celíacos</button>
+            <button class="btn" onclick="filterSelection('lactose')"> Lactose</button>
+            <button class="btn" onclick="filterSelection('vegano')"> Vegano</button>
+            <button class="btn" onclick="filterSelection('doenca')"> Doença Renal</button>
+            <button class="btn" onclick="filterSelection('diabetes')"> Diabetes</button>
+            <button class="btn" onclick="filterSelection('dislipidemia')"> Dislipidemia</button>
+            <button class="btn" onclick="filterSelection('gastrite')"> Gastrite Aguda</button>
+        </div>
     </div>
-    </header>
-    <main>
+    <div class="row">
+        <div class="column celiacos">
+            <div class="content">
+                <a href="celiacos/bolo-mesclado-sem-gluten.html">
+                    <img src="" alt="Celíacos" style="width:100%">
+                    <h4>Bolo Mesclado</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column celiacos">
+            <div class="content">
+                <a href="celiacos/canelone-sem-gluten.html">
+                    <img src="" alt="Celíacos" style="width:100%">
+                    <h4>Canelone</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column celiacos">
+            <div class="content">
+                <a href="celiacos/nhoque-de-espinafre-sem-gluten.html">
+                    <img src="" alt="Celíacos" style="width:100%">
+                    <h4>Nhoque de Espinafre</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column celiacos">
+            <div class="content">
+                <a href="celiacos/pao-frances-sem-gluten.html">
+                    <img src="" alt="Celíacos" style="width:100%">
+                    <h4>Pão Frances</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column celiacos">
+            <div class="content">
+                <a href="celiacos/pave-de-ninho-com-morango-sem-gluten.html">
+                    <img src="" alt="Celíacos" style="width:100%">
+                    <h4>Pave de Ninho com Morango</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column lactose">
+            <div class="content">
+                <a href="../receitas/lactose/bolo-de-banana-com-amendoim.html">
+                    <img src="" alt="Lactose" style="width:100%">
+                    <h4>Bolo de Banana com Amendoim</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column lactose">
+            <div class="content">
+                <a href="../receitas/lactose/bolo-de-chocolate.html">
+                    <img src="" alt="Lactose" style="width:100%">
+                    <h4>Bolo de Chocolate</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column lactose">
+            <div class="content">
+                <a href="../receitas/lactose/crepioca-de-banana-com-melado.html">
+                    <img src="" alt="Lactose" style="width:100%">
+                    <h4>Crepioca de Banana com Melado</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column lactose">
+            <div class="content">
+                <a href="../receitas/lactose/pao-com-peito-de-peru.html">
+                    <img src="" alt="Lactose" style="width:100%">
+                    <h4>Pão de Queijo com Peito de Peru</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column lactose">
+            <div class="content">
+                <a href="../receitas/lactose/smoothie-de-banana-e-frutas-vermelhas.html">
+                    <img src="" alt="Lactose" style="width:100%">
+                    <h4>Smoothie de Banana e Frutas Vermelhas</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column vegano">
+            <div class="content">
+                <a href="">
+                    <img src="../receitas/vegano/lasanha-de-abobrinha.html" alt="Vegano" style="width:100%">
+                    <h4>Lasanha de Abobrinha</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column vegano">
+            <div class="content">
+                <a href="">
+                    <img src="../receitas/vegano/moqueca-de-palmito-pupunha.html" alt="Vegano" style="width:100%">
+                    <h4>Moqueca de Palmito Pupunha</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column vegano">
+            <div class="content">
+                <a href="">
+                    <img src="../receitas/vegano/rabanada-vegana.html" alt="Vegano" style="width:100%">
+                    <h4>Rabanada</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column vegano">
+            <div class="content">
+                <a href="">
+                    <img src="../receitas/vegano/salpicao-vegano.html" alt="Vegano" style="width:100%">
+                    <h4>Salpicão</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column vegano">
+            <div class="content">
+                <a href="">
+                    <img src="../receitas/vegano/strogonoff-de-palmito.html" alt="Vegano" style="width:100%">
+                    <h4>Strogonoff de Palmito</h4>
+                </a>
+            </div>
+        </div>
+        <div class="column doenca">
+            <div class="content">
+                <a href="../receitas/doenca-renal/arroz-ervilhas-castanha.html">
+                    <img src="" alt="Doença Renal" style="width:100%">
+                    <h4>Arroz com Ervilhas e Castanha</h4>
+            </div>
+        </div>
+        <div class="column doenca">
+            <div class="content">
+                <a href="../receitas/doenca-renal/bebida-vegetal-de-macadamia.html">
+                    <img src="" alt="Doença Renal" style="width:100%">
+                    <h4>Bebida Vegetal de Macadâmia</h4>
+            </div>
+        </div>
+        <div class="column doenca">
+            <div class="content">
+                <a href="../receitas/doenca-renal/estrogonofe-de-cogumelos-paris-com-creme-de-arroz.html">
+                    <img src="" alt="Doença Renal" style="width:100%">
+                    <h4>Strogonoff de Cogumelos</h4>
+            </div>
+        </div>
+        <div class="column doenca">
+            <div class="content">
+                <a href="../../pages/receitas/doenca-renal/omelete-de-liquidificador.html">
+                    <img src="" alt="Doença Renal" style="width:100%">
+                    <h4>Omelete de Liquidificador</h4>
+            </div>
+        </div>
+        <div class="column doenca">
+            <div class="content">
+                <a href="../../pages/receitas/doenca-renal/ricota-vegetal.html">
+                    <img src="" alt="Doença Renal" style="width:100%">
+                    <h4>Ricota Vegetal</h4>
+            </div>
+        </div>
+        <div class="column diabetes">
+            <div class="content">
+                <a href="../receitas/lactose/smoothie-de-banana-e-frutas-vermelhas.html">
+                    <img src="" alt="Diabetes" style="width:100%">
+                    <h4>nome da receita</h4>
+            </div>
+        </div>
+        <div class="column dislipidemia">
+            <div class="content">
+                <a href="../receitas/lactose/smoothie-de-banana-e-frutas-vermelhas.html">
+                    <img src="" alt="Dislipidemia" style="width:100%">
+                    <h4>nome da receita</h4>
+            </div>
+        </div>
+
+        <div class="column gastrite">
+            <div class="content">
+                <a href="../receitas/lactose/smoothie-de-banana-e-frutas-vermelhas.html">
+                    <img src="" alt="Gastrite Aguda" style="width:100%">
+                    <h4>nome da receita</h4>
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/scripts/receitasScripts/receitas.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
+    <script>
+        var filterCheckboxes = $('input[type="checkbox"]');
+        var filterFunc = function () {
+            var selectedFilters = [];
+            filterCheckboxes.filter(":checked").each(function () {
+                var v = this.value;
+                if (selectedFilters.indexOf(v) === -1) selectedFilters.push(v);
+            });
+
+            $(".receitas")
+                .hide()
+                .filter(function (_, a) {
+                    var itemCat = $(a).data("category").split(" ");
+                    return selectedFilters.every(function (c) {
+                        return itemCat.indexOf(c) > -1;
+                    });
+                })
+                .show();
+        };
+        filterCheckboxes.on("change", filterFunc);
+        filterSelection("all"); 
+        function filterSelection(c) {
+            var x, i;
+            x = document.getElementsByClassName("column");
+            if (c == "all") c = "";            
+            for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+            }
+        }
+
+        // Show filtered elements
+        function w3AddClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {
+                    element.className += " " + arr2[i];
+                }
+            }
+        }
+
+        // Hide elements that are not selected
+        function w3RemoveClass(element, name) {
+            var i, arr1, arr2;
+            arr1 = element.className.split(" ");
+            arr2 = name.split(" ");
+            for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                    arr1.splice(arr1.indexOf(arr2[i]), 1);
+                }
+            }
+            element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it) and remove the oldest active class
+        var btnContainer = document.getElementById("myBtnContainer");
+        var btns = btnContainer.getElementsByClassName("btn");
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
 </body>
 
 </html>
