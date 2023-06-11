@@ -1,258 +1,255 @@
-
-  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Tienne:wght@700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Tienne:wght@700&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 body {
-    color: black;
-    background-color: white;
-    font-family: 'Inter', sans-serif;
+  color: black;
+  background-color: white;
+  font-family: "Inter", sans-serif;
 }
 
 .topnav {
-    /* É assim que se faz */
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-    overflow: hidden;
-    padding: 1px;
-  }
-  
-  /* Style the links inside the navigation bar */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: 1s;
-    position: relative;
-  }
-  
-  /* Change the color of links on hover */
-  .topnav a:hover {
-    background-color: #5ea7a2;
-    color: #f2f2f2
-  }
-  
-  /* Add a color to the active/current link */
-  .topnav a.active {
-    background-color: #5ea7a2;
-    color: white;
-  }
-  
-  .topnav a.log {
-  }
-  .topnav a.register {
-  }
-  .topnav a.icon {
-    position: fixed;
-    left: 95%;
-  }
+  /* É assim que se faz */
+  display: flex;
+  justify-content: space-between;
+  background-color: #333;
+  overflow: hidden;
+  padding: 1px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  transition: 1s;
+  position: relative;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #5ea7a2;
+  color: #f2f2f2;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #5ea7a2;
+  color: white;
+}
+
+.topnav a.icon {
+  position: fixed;
+  left: 95%;
+}
 
 .cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5ea7a2;
-    text-decoration: none;
-    color: black;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5ea7a2;
+  text-decoration: none;
+  color: black;
 }
 
 .menu-nav {
-    display: flex;
-    text-align: center;
-    padding-right: 30px;
-    padding-left: 40px;
+  display: flex;
+  text-align: center;
+  padding-right: 30px;
+  padding-left: 40px;
 }
+
 .logo {
-width: 130px;
-height: 100px;
+  width: 130px;
+  height: 100px;
 }
+
 .menu-nav-child {
-    padding: 6px 12px;
-    border: 1px solid #dee2e6;
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
+  padding: 6px 12px;
+  border: 1px solid #dee2e6;
+  margin-right: 20px;
+  text-decoration: none;
+  color: black;
 }
 
 .btn-search {
-    border: 4px;
-    text-decoration: none;
-    text-align: center;
+  border: 4px;
+  text-decoration: none;
+  text-align: center;
 }
 
-#divBusca{
-  background-color: #FFFF;
-  border:solid 2px;
-  border-radius:15px;
-  width:300px;
+#divBusca {
+  background-color: #ffff;
+  border: solid 2px;
+  border-radius: 15px;
+  width: 300px;
 }
 
-#txtBusca{
-    float: left;
-    background-color: #FFFFFF;
-    padding-left: 75px;
-    font-style: italic;
-    font-size: 20px;
-    border-radius: 5px;
-    height: 37px;
-    width: 265px;
+#txtBusca {
+  float: left;
+  background-color: #ffffff;
+  padding-left: 75px;
+  font-style: italic;
+  font-size: 20px;
+  border-radius: 5px;
+  height: 37px;
+  width: 265px;
 }
 
 .gastrite {
-    font-size: 18px;
-    text-decoration: none;
-    color: black;
+  font-size: 18px;
+  text-decoration: none;
+  color: black;
 }
 
 .barra-categoria {
-    font-size: 20px;
-    color: black;
-    text-align: left;
-    /* margin-top: 15px; */
-    margin-bottom: 20px;
-    background-color: #f2f2f2;
-    padding: 15px 30px;
+  font-size: 20px;
+  color: black;
+  text-align: left;
+  /* margin-top: 15px; */
+  margin-bottom: 20px;
+  background-color: #f2f2f2;
+  padding: 15px 30px;
 }
 
 .barra-categoria a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .pesquisar {
-    display: flex;
-    column-gap: 5px;
+  display: flex;
+  column-gap: 5px;
 }
 .pesquisar a {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .nome-receita {
-    font-size: 28px;
-    padding-bottom: 10px;
+  font-size: 28px;
+  padding-bottom: 10px;
 }
 
 .main {
-    width: 50%;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  width: 50%;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 .titulo__receitas {
-    font-size: 24px;
-    margin: 20px 0 20px;
+  font-size: 24px;
+  margin: 20px 0 20px;
 }
 
 .img-receita {
-    max-width: 325px !important;
-    height: auto;
-    margin-bottom: 20px;
-    border: 2px solid #bcc7c6;
+  max-width: 325px !important;
+  height: auto;
+  margin-bottom: 20px;
+  border: 2px solid #bcc7c6;
 }
 
 .titulo-secao {
-    font-size: 28px;
-    font-family: 'Inter', sans-serif;
-    background-color: #5ea7a2;
+  font-size: 28px;
+  font-family: "Inter", sans-serif;
+  background-color: #5ea7a2;
 }
 
 .informacoes-preparo {
-    display: flex;
-    margin: 20px 0;
-    gap: 15px;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  display: flex;
+  margin: 20px 0;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 .informacoes-preparo .dados-receita {
-    display: flex;
-    padding: 10px;
-    border-radius: 8px;
-    column-gap: 15px;
-    align-items: center;
-    background-color: #5ea7a2;
-    color: white;
+  display: flex;
+  padding: 10px;
+  border-radius: 8px;
+  column-gap: 15px;
+  align-items: center;
+  background-color: #5ea7a2;
+  color: white;
 }
 
 .informacoes-preparo .dados-receita img {
-    width: 50px;
+  width: 50px;
 }
 
 .dados-receita__info {
-    flex-shrink: 1;
+  flex-shrink: 1;
 }
 
 .dados-receita__info span {
-    display: block;
-    text-align: left;
-    margin-top: 5px;
-    font-weight: bold;
+  display: block;
+  text-align: left;
+  margin-top: 5px;
+  font-weight: bold;
 }
 
+
 .lista-ingredientes {
-    text-align: left;
+  text-align: left;
 }
 
 .list-group-item {
-    position: relative;
-    display: block;
-    padding: 8px 16px;
-    text-decoration: none;
-    background-color: #FFFFFF;
-    border: 1px solid #dee2e6;
+  position: relative;
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  background-color: #ffffff;
+  border: 1px solid #dee2e6;
 }
 .preparo {
-    font-size: 24px;
-    text-align: justify;
-    padding-top: 20px;
-    padding-left: 10px;
-    margin-top: 15px;
-    font-weight: bold;
+  font-size: 24px;
+  text-align: justify;
+  padding-top: 20px;
+  padding-left: 10px;
+  margin-top: 15px;
+  font-weight: bold;
 }
 
 .preparo__text {
-    line-height: 1.5;
-    font-size: 14px;
-    text-align: justify;
+  line-height: 1.5;
+  font-size: 14px;
+  text-align: justify;
 }
 
 .receitas-relacionadas-container {
-    margin-top: 50px;
-    padding: 10px 100px;
+  margin-top: 50px;
+  padding: 10px 100px;
 }
 
 .receitas-relacionadas {
-    display: flex;
-    margin-top: 10px;
-    gap: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+  display: flex;
+  margin-top: 10px;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 .receitas-relacionadas__receita img {
-    display: block;
-    max-width: 190px;
-    margin-bottom: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  display: block;
+  max-width: 190px;
+  margin-bottom: 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .receitas-relacionadas__receita a {
-    text-decoration: none;
-    text-align: center;
+  text-decoration: none;
+  text-align: center;
 }
 
 .footer {
-    background-color: #5ea7a2;
-    color: black;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
+  background-color: #5ea7a2;
+  color: black;
+  text-align: center;
+  padding: 15px;
+  margin-top: 20px;
 }
