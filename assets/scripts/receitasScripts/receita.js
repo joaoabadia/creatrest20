@@ -25,7 +25,7 @@ function obterReceitasLocalStorage() {
 function getItemLocalStorage() {
   let array = obterReceitasLocalStorage();
 
-  const divReceitas = document.getElementsByClassName("receita");
+  const divReceitas = document.getElementById("receitaDisplay");
   array.forEach((item) => {
     const itemHtml = `
         <div class="d-flex justify-content-between">      
