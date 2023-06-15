@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Tienne:wght@700&amp;display=swap"
         rel="stylesheet">
+    <script src="../../../assets/scripts/receitasScripts/receita.js"></script>
     <title>Bolo mesclado sem glúten</title>
 </head>
 
@@ -24,15 +25,14 @@
             <div>
                 <a class="register" href="/pages/users/register.html">Registrar</a>
                 <a class="log" href="/pages/users/login.html">Login</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </div>
         </div>
     </header>
     <div class="barra-categoria"> Categoria: Celíacos</div>
     <main class="main">
 
-        <h3 class="nome-receita">Bolo Mesclado sem Glúten</h3>
-        <img class="img-receita" src="../../../assets/img/imgReceitas/Bolo mesclado sem gluten.jpg"
+        <h3 class="nome-receita" id="nomeReceita">Bolo Mesclado sem Glúten</h3>
+        <img class="img-receita" id="imgReceita" src="../../../assets/img/imgReceitas/Bolo mesclado sem gluten.jpg"
             alt="prato de refeicao">
         <div class="informacoes-preparo">
             <div class="dados-receita">
@@ -64,6 +64,9 @@
                     Dificuldade:
                     <span>Fácil</span>
                 </div>
+            </div>
+            <div class="save-itemButton">
+                <button onclick="salvarReceitaLocalStorage()">Salvar Receita</button>
             </div>
         </div>
         <section>

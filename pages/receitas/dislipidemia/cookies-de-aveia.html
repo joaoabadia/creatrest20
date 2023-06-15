@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/styles/receitas/receita.css">
+    <script src="../../../assets/scripts/receitasScripts/receita.js"></script>
     <link rel="icon" href="../../../assets/img/Logo.png">
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Tienne:wght@700&amp;display=swap"
@@ -17,23 +18,20 @@
     <header>
         <div class="topnav">
             <div>
-                <a class="active" href="../../home/home.html">Menu</a>#">Menu</a>
-                <a href=>Novidades</a>
+                <a class="active" href="../../home/home.html">Menu</a>
                 <a href=" /pages/receitas/receitas.html">Receitas</a>
             </div>
             <div>
                 <a class="register" href="/pages/users/register.html">Registrar</a>
                 <a class="log" href="/pages/users/login.html">Login</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </div>
         </div>
     </header>
     <div class="barra-categoria"> Categoria: Dislipidemia</div>
     <main class="main">
 
-        <h3 class="nome-receita">Cookies de aveia</h3>
-        <img class="img-receita" src="../../../assets/img/imgReceitas/Cookies de aveia.jpg"
-            alt="prato de refeicao">
+        <h3 class="nome-receita" id="nomeReceita">Cookies de aveia</h3>
+        <img class="img-receita" id="imgReceita" src="../../../assets/img/imgReceitas/Cookies de aveia.jpg" alt="prato de refeicao">
         <div class="informacoes-preparo">
             <div class="dados-receita">
                 <div>
@@ -64,6 +62,9 @@
                     Dificuldade:
                     <span>Fácil</span>
                 </div>
+            </div>
+            <div class="save-itemButton">
+                <button onclick="salvarReceitaLocalStorage()">Salvar Receita</button>
             </div>
         </div>
         <section>
@@ -97,11 +98,15 @@
             <h4 class="titulo-secao">Modo de Preparo</h4>
             <ol class="preparo__text">
                 <li class="list-group-item">Preaqueça o forno a 180ºC. </li>
-                <li class="list-group-item">Em uma vasilha, coloque a banana amassada, a aveia em flocos finos, o óleo vegetal, o fermento, a canela e misture.</li>
+                <li class="list-group-item">Em uma vasilha, coloque a banana amassada, a aveia em flocos finos, o óleo
+                    vegetal, o fermento, a canela e misture.</li>
                 </li>
-                <li class="list-group-item">Se gostar, adicione as uvas-passas e as castanhas picadas. Misture bem, até ficar uniforme. </li>
+                <li class="list-group-item">Se gostar, adicione as uvas-passas e as castanhas picadas. Misture bem, até
+                    ficar uniforme. </li>
                 </li>
-                <li class="list-group-item">Coloque essa massa com o auxílio de 2 colheres sobre uma assadeira forrada com papel-manteiga, ou forma antiaderente levemente untada, e leve para assar por 20 minutos ou até ficarem bem sequinhos.</li>
+                <li class="list-group-item">Coloque essa massa com o auxílio de 2 colheres sobre uma assadeira forrada
+                    com papel-manteiga, ou forma antiaderente levemente untada, e leve para assar por 20 minutos ou até
+                    ficarem bem sequinhos.</li>
                 </li>
             </ol>
         </section>

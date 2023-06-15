@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/styles/receitas/receita.css">
+    <script src="../../../assets/scripts/receitasScripts/receita.js"></script>
     <link rel="icon" href="../../../assets/img/Logo.png">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Tienne:wght@700&amp;display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&amp;family=Tienne:wght@700&amp;display=swap" rel="stylesheet">
     <title>Caponata de berinjela</title>
 </head>
 
@@ -17,22 +16,20 @@
     <header>
         <div class="topnav">
             <div>
-                <a class="active" href="../../home/home.html">Menu</a>#">Menu</a>
-                <a href=>Novidades</a>
+                <a class="active" href="../../home/home.html">Menu</a>
                 <a href=" /pages/receitas/receitas.html">Receitas</a>
             </div>
             <div>
                 <a class="register" href="/pages/users/register.html">Registrar</a>
                 <a class="log" href="/pages/users/login.html">Login</a>
-                <a href="javascript:void(0);" class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></a>
             </div>
         </div>
     </header>
     <div class="barra-categoria"> Categoria: Diabetes</div>
     <main class="main">
 
-        <h3 class="nome-receita">Caponata de berinjela</h3>
-        <img class="img-receita" src="../../../assets/img/imgReceitas/Caponata de berinjela.jpg"
+        <h3 class="nome-receita" id="nomeReceita">Caponata de berinjela</h3>
+        <img class="img-receita" id="imgReceita" src="../../../assets/img/imgReceitas/Caponata de berinjela.jpg"
             alt="prato de refeicao">
         <div class="informacoes-preparo">
             <div class="dados-receita">
@@ -64,6 +61,9 @@
                     Dificuldade:
                     <span>Fácil</span>
                 </div>
+            </div>
+            <div class="save-itemButton">
+                <button onclick="salvarReceitaLocalStorage()">Salvar Receita</button>
             </div>
         </div>
         <section>
@@ -109,12 +109,16 @@
         <section>
             <h4 class="titulo-secao">Modo de Preparo</h4>
             <ol class="preparo__text">
-                <li class="list-group-item">Espalhe a berinjela em uma fôrma e polvilhe com sal. Deixe descansar por 30 minutos. Lave rapidamente em água corrente e seque com papel-toalha. </li>
-                <li class="list-group-item">Em uma frigideira grande e larga, em fogo médio, aqueça 3 colheres (sopa) do azeite e refogue a cebola e os pimentões por 5 minutos. </li>
+                <li class="list-group-item">Espalhe a berinjela em uma fôrma e polvilhe com sal. Deixe descansar por 30
+                    minutos. Lave rapidamente em água corrente e seque com papel-toalha. </li>
+                <li class="list-group-item">Em uma frigideira grande e larga, em fogo médio, aqueça 3 colheres (sopa) do
+                    azeite e refogue a cebola e os pimentões por 5 minutos. </li>
                 </li>
-                <li class="list-group-item">Adicione a berinjela, a azeitona, o louro, a uva-passa, o açúcar, o vinagre, sal, pimenta e cozinhe por 5 minutos, mexendo de vez em quando.  </li>
+                <li class="list-group-item">Adicione a berinjela, a azeitona, o louro, a uva-passa, o açúcar, o vinagre,
+                    sal, pimenta e cozinhe por 5 minutos, mexendo de vez em quando. </li>
                 </li>
-                <li class="list-group-item">Desligue e deixe esfriar. Espalhe em um refratário e regue com o restante do azeite. Tampe e leve à geladeira por 6 horas antes de servir.</li>
+                <li class="list-group-item">Desligue e deixe esfriar. Espalhe em um refratário e regue com o restante do
+                    azeite. Tampe e leve à geladeira por 6 horas antes de servir.</li>
                 </li>
             </ol>
         </section>

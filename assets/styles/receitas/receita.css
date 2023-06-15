@@ -246,6 +246,20 @@ body {
   text-align: center;
 }
 
+.save-itemButton button{
+  background-color: #5ea7a2;
+  border: none;
+  border-radius: 10px;
+  height: 100px;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+}
+
 .footer {
   background-color: #5ea7a2;
   color: black;
@@ -253,3 +267,5 @@ body {
   padding: 15px;
   margin-top: 20px;
 }
+
+
