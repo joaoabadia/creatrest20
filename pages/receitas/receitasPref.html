@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="../../assets/styles/receitas/receitas.css" />
+    <link rel="stylesheet" href="../../assets/styles/receitas/receitasPref.css" />
     <link rel="shortcut icon" href="favicon-16x16.png" type="image/x-icon" />
     <title>CreatRest</title>
   </head>
@@ -9,25 +9,35 @@
   <body>
     <header>
       <div class="topnav">
-        <a class="" href="#">Menu</a>
+        <a class="logo" href="../home/home.html"><img src="../../assets/img/Logo.png" alt="" style="width: 70px;"></a>
+        <a href="../receitas/receitasPref.html">Receitas Preferidas</a>
         <a href="receitas.html">Receitas</a>
-        <a class="register" href="/users/register.html">Registrar</a>
-        <a class="log" href="/users/login.html">Login</a>
+        <div class="navbar">
+          <div class="dropdown">
+            <button class="dropbtn">
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="../contato/contato.html">Contato</a>
+            </div>
+          </div>
+        </div>
+        <a class="register" href="../users/register.html">Registrar</a>
+        <a class="log" href="../users/login.html">Login</a>
       </div>
     </header>
     <div class="row">
       <div class="content">
         <div class="receitaCard">
-          <a href="celiacos/bolo-mesclado-sem-gluten.html">
-            <div id="receitaDisplay">
-            </div>
+          <a href="">
+            <div id="receitaDisplay"></div>
           </a>
-        </div>        
+        </div>
       </div>
     </div>
     <script src="../../assets/scripts/receitasScripts/receita.js"></script>
     <script>
-        getItemLocalStorage();
+      getItemLocalStorage();
     </script>
   </body>
 </html>

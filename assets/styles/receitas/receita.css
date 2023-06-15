@@ -260,6 +260,11 @@ body {
   cursor: pointer;
 }
 
+.save-itemButton :hover{
+  background-color: #d38b39;
+  color: white;
+}
+
 .footer {
   background-color: #5ea7a2;
   color: black;
