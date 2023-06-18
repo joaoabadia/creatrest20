@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css" />
     <link rel="stylesheet" href="../../assets/styles/users/admin.css" />
+    <script src="../../assets/scripts/userScripts/admin.js"></script>
   </head>
 
   <body>
@@ -25,7 +26,67 @@
         </div>
       </div>
     </header>
-
+    <form>
+      <div class="form-group">
+        <div class="registrar-receita">
+          <div class="mb-3">
+            <div class="nome">
+              <label for="nome" class="form-label">Nome</label>
+              <input type="text" class="form-control nome" id="nome" />
+            </div>
+          </div>
+          <div class="mb-3">
+            <div class="tempo-de-preparo">
+              <label for="tempo" class="form-label">Tempo de Preparo</label>
+              <input type="text" class="form-control tempoPreparo" id="tempo" />
+            </div>
+          </div>
+          <div class="rendimento">
+            <div class="mb-3">
+              <label for="rendimento" class="form-label">Rendimento</label>
+              <input type="text" class="form-control rendimento" id="rendimento" />
+            </div>
+          </div>
+          <div class="dificuldade-de-preparo">
+            <div class="mb-3">
+              <label for="dificuldade" class="form-label">Dificuldade de Preparo</label>
+              <input type="text" class="form-control dificuldade" id="dificuldade" />
+            </div>
+          </div>
+          <div class="categoria-de-restrição">
+            <div class="mb-3">
+              <label for="categoria" class="form-label">Categoria de Restrição</label>
+              <input type="text" class="form-control categoria" id="categoria" />
+            </div>
+          </div>
+          <div class="ingredientes">
+            <div class="mb-3">
+              <label for="ingredientes" class="form-label">Ingredientes</label>
+              <textarea type="text" class="form-control ingredientes" id="ingredientes"></textarea>
+            </div>
+          </div>
+          <div class="modo-de-preparo">
+            <div class="mb-3">
+              <label for="preparo" class="form-label">Modo de Preparo</label>
+              <textarea type="text" class="form-control modoPreparo" id="preparo"></textarea>
+            </div>
+          </div>
+          <div class="descricao">
+            <div class="mb-3">
+              <label for="descricao" class="form-label">Descrição</label>
+              <textarea type="text" class="form-control descricao" id="descricao"> </textarea>
+            </div>
+          </div>
+          <div class="imagem-receita">
+            <div class="mb-3">
+              <label for="imagem" class="form-label">Escolha uma imagem</label>
+              <input class="form-control" type="file" id="imagem" />
+            </div>
+          </div>
+          <button type="submit" class="btn btn-lg btn-outline-success" onclick="saveReceitaOnLocalStorage()">Submit</button>
+        </div>
+      </div>
+    </form>
     <div class="footer-clean">
       <footer>
         <div class="container">

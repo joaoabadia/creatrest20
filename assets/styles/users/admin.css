@@ -130,3 +130,11 @@
   opacity: 0.6;
 }
 /*Css do Footer Final*/
+
+.registrar-receita{
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+  margin-top: 50px;
+}
