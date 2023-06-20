@@ -1,43 +1,11 @@
+@import url('../global/_header.css');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
   }
-  
-  /*Css do Header*/
-  .headerCreat {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #65a9a0;
-    color: #000000;
-  }
-  
-  .headerCreat :hover {
-    color: rgb(14, 13, 13);
-  }
-  
-  .headerCreat a {
-    text-decoration: none;
-    color: white;
-  }
-  
-  .headerCreat .pages {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 20%;
-  }
-  
-  .headerCreat .login {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 10%;
-    padding-right: 20px;
-  }
-  /*Css do Header Final*/
   
   /*Css do Footer*/
   .footer-clean {
