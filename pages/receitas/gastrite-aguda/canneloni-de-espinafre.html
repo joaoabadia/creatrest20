@@ -16,62 +16,60 @@
 
 <body>
     <header>
-        <div class="headerCreat">
-            <a class="logo" href="../../home/home.html"><img src="../../../assets/img/Logo.png" alt="Logo Site"
-                    style="width: 70px" /></a>
-            <div class="nav">
-                <div class="pages">
-                    <a href="../receitasPref.html">Receitas Preferidas</a>
-                    <a href="../receitas.html">Receitas</a>
-                </div>
-                <div class="login">
-                    <a class="register" href="/pages/users/register.html">Registrar</a>
-                    <a class="profile" href="/pages/users/profile.html">Perfil</a>
-                    <a class="log" href="/pages/users/login.html">Login</a>
-                </div>
-            </div>
+    <div class="headerCreat">
+      <a class="logo" href="../home/home.html"><img src="../../../assets/img/Logo.png" alt="Logo Site"
+          style="width: 70px" /></a>
+      <div class="nav">
+        <div class="pages">
+          <a href="../receitasPref.html">Receitas Preferidas</a>
+          <a href="../receitas.html">Receitas</a>
         </div>
-    </header>
+        <div class="login" id="userSection">
+          <!-- Aqui será substituído pelo usuário logado ou pelo trecho de login -->
+        </div>
+      </div>
+    </div>
+  </header>
     <div class="barra-categoria"> Categoria: Grastrite Aguda</div>
     <main class="main">
         <h3 class="nome-receita" id="nomeReceita">Canneloni de Espinafre</h3>
         <img class="img-receita" id="imgReceita" src="../../../assets/img/imgReceitas/Canneloni de espinafre.jpg"
             alt="prato de refeicao">
-            <div class="informacoes-preparo">
-                <div class="dados-receita">
-                    <div>
-                        <img src="../../../assets/img/imgReceitas/cronometro.png"
-                            alt="cronômetro representando o tempo de duração">
-                    </div>
-                    <div class="dados-receita__info">
-                        Tempo de preparo:
-                        <span>55 min</span>
-                    </div>
+        <div class="informacoes-preparo">
+            <div class="dados-receita">
+                <div>
+                    <img src="../../../assets/img/imgReceitas/cronometro.png"
+                        alt="cronômetro representando o tempo de duração">
                 </div>
-                <div class="dados-receita">
-                    <div>
-                        <img src="../../../assets/img/imgReceitas/portion.png"
-                            alt="ícone representando quantidade de porções">
-                    </div>
-                    <div class="dados-receita__info">
-                        Rendimento:
-                        <span>1 bolo médio</span>
-                    </div>
+                <div class="dados-receita__info">
+                    Tempo de preparo:
+                    <span>55 min</span>
                 </div>
-                <div class="dados-receita">
-                    <div>
-                        <img src="../../../assets/img/imgReceitas/difiuldade.png"
-                            alt="ícone representando o nível de dificuldade">
-                    </div>
-                    <div class="dados-receita__info">
-                        Dificuldade:
-                        <span>Fácil</span>
-                    </div>
-                </div>
-                <div class="save-itemButton">
-                    <button onclick="salvarReceitaLocalStorage()">Salvar Receita</button>
-                  </div>
             </div>
+            <div class="dados-receita">
+                <div>
+                    <img src="../../../assets/img/imgReceitas/portion.png"
+                        alt="ícone representando quantidade de porções">
+                </div>
+                <div class="dados-receita__info">
+                    Rendimento:
+                    <span>1 bolo médio</span>
+                </div>
+            </div>
+            <div class="dados-receita">
+                <div>
+                    <img src="../../../assets/img/imgReceitas/difiuldade.png"
+                        alt="ícone representando o nível de dificuldade">
+                </div>
+                <div class="dados-receita__info">
+                    Dificuldade:
+                    <span>Fácil</span>
+                </div>
+            </div>
+            <div class="save-itemButton">
+                <button onclick="salvarReceitaLocalStorage()">Salvar Receita</button>
+            </div>
+        </div>
         <section>
             <h4 class="titulo-secao">Ingredientes</h4>
 
@@ -148,6 +146,8 @@
     <footer class="footer">
         Todos os direitos reservados à CreatRest.
     </footer>
+
+    <script src="../../../assets/scripts/autenticacao/script-controle-usuario-logado.js"></script>
 </body>
 
 </html>

@@ -16,27 +16,26 @@
 
 <body>
     <header>
-        <div class="headerCreat">
-            <a class="logo" href="../../home/home.html"><img src="../../../assets/img/Logo.png" alt="Logo Site"
-                    style="width: 70px" /></a>
-            <div class="nav">
-                <div class="pages">
-                    <a href="../receitasPref.html">Receitas Preferidas</a>
-                    <a href="../receitas.html">Receitas</a>
-                </div>
-                <div class="login">
-                    <a class="register" href="/pages/users/register.html">Registrar</a>
-                    <a class="profile" href="/pages/users/profile.html">Perfil</a>
-                    <a class="log" href="/pages/users/login.html">Login</a>
-                </div>
-            </div>
+    <div class="headerCreat">
+      <a class="logo" href="../home/home.html"><img src="../../../assets/img/Logo.png" alt="Logo Site"
+          style="width: 70px" /></a>
+      <div class="nav">
+        <div class="pages">
+          <a href="../receitasPref.html">Receitas Preferidas</a>
+          <a href="../receitas.html">Receitas</a>
         </div>
-    </header>
+        <div class="login" id="userSection">
+          <!-- Aqui será substituído pelo usuário logado ou pelo trecho de login -->
+        </div>
+      </div>
+    </div>
+  </header>
     <div class="barra-categoria"> Categoria: Lactose</div>
     <main class="main">
 
         <h3 class="nome-receita" id="nomeReceita">Bolo de chocolate</h3>
-        <img class="img-receita" id="imgReceita" src="../../../assets/img/imgReceitas/Bolo de chocolate.jpg" alt="prato de refeicao">
+        <img class="img-receita" id="imgReceita" src="../../../assets/img/imgReceitas/Bolo de chocolate.jpg"
+            alt="prato de refeicao">
         <div class="informacoes-preparo">
             <div class="dados-receita">
                 <div>
@@ -70,7 +69,7 @@
             </div>
             <div class="save-itemButton">
                 <button onclick="salvarReceitaLocalStorage()">Salvar Receita</button>
-              </div>
+            </div>
         </div>
         <section>
             <h4 class="titulo-secao">Ingredientes</h4>
@@ -128,38 +127,40 @@
         <h4 class="">Receitas Relacionadas</h4>
         <div class="receitas-relacionadas">
             <div class="receitas-relacionadas__receita">
-                    <a href="../lactose/bolo-de-banana-com-amendoim.html">
-                        <img src="../../../assets/img/imgReceitas/Bolo de banana com amendoim.jpg"
-                            alt="Imagem de receita relacionada: Bolo de Banana com Amendoim">
-                        <span>Bolo de Banana com Amendoim</span>
-                    </a>
-                </div>
-                <div class="receitas-relacionadas__receita">
-                    <a href="../lactose/crepioca-de-banana-com-melado.html">
-                        <img src="../../../assets/img/imgReceitas/Crepioca de banana com melado.jpg"
-                            alt="Imagem de receita relacionada: Crepioca de Banana com Melado">
-                        <span>Crepioca de Banana com Melado</span>
-                    </a>
-                </div>
-                <div class="receitas-relacionadas__receita">
-                    <a href="../lactose/pao-com-peito-de-peru.html">
-                        <img src="../../../assets/img/imgReceitas/Pão com peito de peru.jpg"
-                            alt="Imagem de receita relacionada:Pão com Peito de Peru">
-                        <span>Pão com Peito de Peru</span>
-                    </a>
-                </div>
-                <div class="receitas-relacionadas__receita">
-                    <a href="../lactose/smoothie-de-banana-e-frutas-vermelhas.html">
-                        <img src="../../../assets/img/imgReceitas/Smoothie de banana e frutas vermelhas.jpg"
-                            alt="Imagem de receita relacionada: Smoothie de Banana e Frutas Vermelhas">
-                        <span>Smoothie de Banana e Frutas Vermelhas</span>
-                    </a>
-                </div>
+                <a href="../lactose/bolo-de-banana-com-amendoim.html">
+                    <img src="../../../assets/img/imgReceitas/Bolo de banana com amendoim.jpg"
+                        alt="Imagem de receita relacionada: Bolo de Banana com Amendoim">
+                    <span>Bolo de Banana com Amendoim</span>
+                </a>
+            </div>
+            <div class="receitas-relacionadas__receita">
+                <a href="../lactose/crepioca-de-banana-com-melado.html">
+                    <img src="../../../assets/img/imgReceitas/Crepioca de banana com melado.jpg"
+                        alt="Imagem de receita relacionada: Crepioca de Banana com Melado">
+                    <span>Crepioca de Banana com Melado</span>
+                </a>
+            </div>
+            <div class="receitas-relacionadas__receita">
+                <a href="../lactose/pao-com-peito-de-peru.html">
+                    <img src="../../../assets/img/imgReceitas/Pão com peito de peru.jpg"
+                        alt="Imagem de receita relacionada:Pão com Peito de Peru">
+                    <span>Pão com Peito de Peru</span>
+                </a>
+            </div>
+            <div class="receitas-relacionadas__receita">
+                <a href="../lactose/smoothie-de-banana-e-frutas-vermelhas.html">
+                    <img src="../../../assets/img/imgReceitas/Smoothie de banana e frutas vermelhas.jpg"
+                        alt="Imagem de receita relacionada: Smoothie de Banana e Frutas Vermelhas">
+                    <span>Smoothie de Banana e Frutas Vermelhas</span>
+                </a>
+            </div>
         </div>
     </aside>
     <footer class="footer">
         Todos os direitos reservados à CreatRest.
     </footer>
+
+    <script src="../../../assets/scripts/autenticacao/script-controle-usuario-logado.js"></script>
 </body>
 
 </html>
