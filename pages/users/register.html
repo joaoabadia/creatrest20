@@ -40,18 +40,18 @@
 
                 <form>
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example1cg">Nome</label>
-                    <input type="text" id="form3Example1cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="signupName">Nome</label>
+                    <input type="text" id="signupName" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example3cg">E-mail</label>
-                    <input type="email" id="form3Example3cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="signupEmail">E-mail</label>
+                    <input type="email" id="signupEmail" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
-                    <label class="form-label" for="form3Example4cg">Senha</label>
-                    <input type="password" id="form3Example4cg" class="form-control form-control-lg" />
+                    <label class="form-label" for="signupPassword">Senha</label>
+                    <input type="password" id="signupPassword" class="form-control form-control-lg" />
                   </div>
 
                   <div class="form-outline mb-4">
@@ -67,7 +67,7 @@
                   </div>
 
                   <div class="d-flex justify-content-center">
-                    <button type="button"
+                    <button type="button" onclick="signup()"
                       class="btn btn-success btn-block btn-lg gradient-custom-4 text-body">Registrar</button>
                   </div>
 
@@ -120,6 +120,9 @@
       </div>
     </footer>
   </div>
+
+  <script src="../../assets/scripts/autenticacao/guarda-de-rota.js"></script>
+  <script src="../../assets/scripts/autenticacao/register.js"></script>
 </body>
 
 </html>
