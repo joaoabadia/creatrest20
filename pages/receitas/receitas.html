@@ -15,19 +15,16 @@
   <body>
     <header>
       <div class="headerCreat">
-          <a class="logo" href="../home/home.html"><img src="../../../assets/img/Logo.png" alt="Logo Site"
-                  style="width: 70px" /></a>
-          <div class="nav">
-              <div class="pages">
-                  <a href="../receitas/receitasPref.html">Receitas Preferidas</a>
-                  <a href="../receitas/receitas.html">Receitas</a>
-              </div>
-              <div class="login">
-                  <a class="register" href="/pages/users/register.html">Registrar</a>
-                  <a class="profile" href="/pages/users/profile.html">Perfil</a>
-                  <a class="log" href="/pages/users/login.html">Login</a>
-              </div>
-          </div>
+        <div class="pages">
+          <a class="logo" href="../home/home.html"><img src="../../assets/img/Logo.png" alt="" style="width: 70px" /></a>
+          <a href="../receitas/receitasPref.html">Receitas Preferidas</a>
+          <a href="receitas.html">Receitas</a>
+        </div>
+        <div class="login">
+          <a class="register" href="/pages/users/register.html">Registrar</a>
+          <a class="profile" href="/pages/users/profile.html">Perfil</a>
+          <a class="log" href="/pages/users/login.html">Login</a>
+        </div>
       </div>
   </header>
     <div class="myBtnContainer">
@@ -44,7 +41,7 @@
       </div>
     </div>
     <div class="row">
-      <div class="card column celiacos" id="receita" id="receita" style="width: 18rem">
+      <div class="card column celiacos" id="receita" style="width: 18rem">
         <img class="card-img-top" src="../../assets/img/imgReceitas/Bolo mesclado sem gluten.jpg" alt="Card image cap" />
         <div class="card-body">
           <h5 class="card-title">Bolo Mesclado</h5>
@@ -289,6 +286,13 @@
           <a href="../receitas/vegano/strogonoff-de-palmito.html" class="btn btn-success">Ver Receita</a>
         </div>
       </div>
+      <div class="card column vegano"  id="receita"style="width: 18rem">
+        <img class="card-img-top" src="../../assets/img/imgReceitas/Strogonoff de palmito.jpg" alt="Card image cap" />
+        <div class="card-body">
+          <h5 class="card-title">Strogonoff de palmito</h5>
+          <a href="../receitas/vegano/strogonoff-de-palmito.html" class="btn btn-success">Ver Receita</a>
+        </div>
+      </div>
     </div>
     <div class="footer-clean">
       <footer>
@@ -328,42 +332,6 @@
         </div>
       </footer>
     </div>
-    <script>
-      // Show filtered elements
-      function w3AddClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          if (arr1.indexOf(arr2[i]) == -1) {
-            element.className += " " + arr2[i];
-          }
-        }
-      }
 
-      // Hide elements that are not selected
-      function w3RemoveClass(element, name) {
-        var i, arr1, arr2;
-        arr1 = element.className.split(" ");
-        arr2 = name.split(" ");
-        for (i = 0; i < arr2.length; i++) {
-          while (arr1.indexOf(arr2[i]) > -1) {
-            arr1.splice(arr1.indexOf(arr2[i]), 1);
-          }
-        }
-        element.className = arr1.join(" ");
-      }
-
-      // Add active class to the current button (highlight it) and remove the oldest active class
-      var btnContainer = document.getElementById("myBtnContainer");
-      var btns = btnContainer.getElementsByClassName("btn");
-      for (var i = 0; i < btns.length; i++) {
-        btns[i].addEventListener("click", function () {
-          var current = document.getElementsByClassName("active");
-          current[0].className = current[0].className.replace(" active", "");
-          this.className += " active";
-        });
-      }
-    </script>
   </body>
 </html>
