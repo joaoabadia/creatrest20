@@ -12,97 +12,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-.topnav {
-    /* É assim que se faz */
-    display: flex;
-    justify-content: space-between;
-    background-color: #333;
-    overflow: hidden;
-    padding: 1px;
-}
-
-/* Style the links inside the navigation bar */
-.topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    transition: 1s;
-    position: relative;
-}
-
-/* Change the color of links on hover */
-.topnav a:hover {
-    background-color: #5ea7a2;
-    color: #f2f2f2
-}
-
-/* Add a color to the active/current link */
-.topnav a.active {
-    background-color: #5ea7a2;
-    color: white;
-}
-
-.topnav a.log {}
-
-.topnav a.register {}
-
-.topnav a.icon {
-    position: fixed;
-    left: 95%;
-}
-
-.cabecalho {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #5ea7a2;
-    text-decoration: none;
-    color: black;
-}
-
-.menu-nav {
-    display: flex;
-    text-align: center;
-    padding-right: 30px;
-    padding-left: 40px;
-}
-
-.menu-nav-child {
-    padding: 6px 12px;
-    border: 1px solid #dee2e6;
-    margin-right: 20px;
-    text-decoration: none;
-    color: black;
-}
-
-.btn-search {
-    border: 4px;
-    text-decoration: none;
-    text-align: center;
-}
-
-#divBusca {
-    background-color: #FFFF;
-    border: solid 2px;
-    border-radius: 15px;
-    width: 300px;
-}
-
-#txtBusca {
-    float: left;
-    background-color: #FFFFFF;
-    padding-left: 75px;
-    font-style: italic;
-    font-size: 20px;
-    border-radius: 5px;
-    height: 37px;
-    width: 265px;
-}
-
 .gastrite {
     font-size: 18px;
     text-decoration: none;
@@ -250,15 +159,6 @@ body {
     text-align: center;
 }
 
-.footer {
-    background-color: #5ea7a2;
-    color: black;
-    text-align: center;
-    padding: 15px;
-    margin-top: 20px;
-}
-
-
 /*Css do Footer*/
 .footer-clean {
     position: relative;
@@ -351,3 +251,16 @@ body {
 }
 
 /*Css do Footer Final*/
+
+
+button{
+    margin: 0 auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 800px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    overflow: hidden;
+  }
