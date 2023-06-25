@@ -7,6 +7,10 @@
   font-family: Arial, Helvetica, sans-serif;
 }
 
+.crea-container {
+  min-height: 90vh;
+}
+
 /*Css do Footer*/
 .footer-clean {
   position: relative;
@@ -109,4 +113,12 @@
   background-color: #fff;
   box-shadow: 0 0 10px rgba(0,0,0,0.2);
   overflow: hidden;
+}
+
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
 }

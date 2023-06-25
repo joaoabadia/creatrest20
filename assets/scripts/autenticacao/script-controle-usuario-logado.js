@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function () {
     var user = JSON.parse(sessionStorage.getItem('user'));
     if (user) {
         var userSection = document.getElementById('userSection');
-        userSection.innerHTML = '<a>Usuário: ' + user.name + '</a><a href="#" id="logout">Logout</a>';
+        userSection.innerHTML = '<a style="color: white">Usuário: ' + user.name + '</a><a href="#" id="logout">Logout</a>';
 
         // Adiciona o evento de logout ao botão "Logout"
         var logoutButton = document.getElementById('logout');

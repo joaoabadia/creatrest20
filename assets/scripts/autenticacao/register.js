@@ -18,13 +18,37 @@ request.onerror = function (event) {
 };
 
 function signup() {
-    var username = document.getElementById('signupEmail').value;
-    var password = document.getElementById('signupPassword').value;
-    var email = document.getElementById('signupEmail').value;
-    var name = document.getElementById('signupName').value;
+    const username = document.getElementById('signupEmail').value;
+    const password = document.getElementById('signupPassword').value;
+    const passwordConfirmation = document.getElementById('signupPasswordConfirm').value;
+    const email = document.getElementById('signupEmail').value;
+    const name = document.getElementById('signupName').value;
+    const termsAccepted = document.getElementById('signupTerms').checked;
+    
+    if (name.trim() === '' || password.trim() === '' 
+    || passwordConfirmation.trim() === '' || email.trim() === '') {
+        alert('Existem campos obrigatórios que não foram preenchidos');
+        return;
+    }
+
+    if (password !== passwordConfirmation) {
+        alert('As senhas não coincidem');
+        return;
+    }
+
+    if (!termsAccepted) {
+        alert('Você deve aceitar os termos de uso')
+        return;
+    }
+
+    if (!emailEhValido(email)) {
+        alert('Email não é válido');
+        return;
+    }
 
     var transaction = db.transaction(['users'], 'readwrite');
     var objectStore = transaction.objectStore('users');
+    
     var request = objectStore.add({ username: username, password: password, email: email, name: name });
 
     request.onsuccess = function (event) {
@@ -36,3 +60,10 @@ function signup() {
         console.log('Erro ao registrar:', event.target.error);
     };
 }
+
+function emailEhValido(email) {
+    // Expressão regular para validar email
+    const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return re.test(email);
+  }
+  
