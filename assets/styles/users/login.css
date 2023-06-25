@@ -38,7 +38,7 @@ body {
 
 /*Css do Footer*/
 .footer-clean {
-  position: relative;
+  position: fixed;
   width: 100%;
   left: 0;
   bottom: 0;
