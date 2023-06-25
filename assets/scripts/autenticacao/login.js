@@ -29,7 +29,7 @@ function login() {
     var user = event.target.result;
     if (user && user.password === password) {
       createSession(user); // Cria a sessão após o login bem-sucedido
-      window.location.href = '/pages/receitas/receitas.html'; // Redireciona para a página inicial
+      window.location.href = '/pages/home/home.html'; // Redireciona para a página inicial
     } else {
       alert('Nome de usuário ou senha incorretos.');
     }
